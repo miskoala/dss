@@ -28,9 +28,12 @@ import java.io.OutputStream;
 import java.security.GeneralSecurityException;
 import java.security.KeyStore;
 import java.security.KeyStore.PasswordProtection;
+import java.security.KeyStore.ProtectionParameter;
+import java.security.KeyStore.TrustedCertificateEntry;
 import java.security.cert.Certificate;
 import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.Iterator;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -256,7 +259,19 @@ public class KeyStoreCertificateSource extends CommonCertificateSource {
 	 */
 	public void addCertificateToKeyStore(CertificateToken certificateToken) {
 		try {
-			keyStore.setCertificateEntry(certificateToken.getDSSIdAsString(), certificateToken.getCertificate());
+			//było tak
+			//keyStore.setCertificateEntry(certificateToken.getDSSIdAsString(), certificateToken.getCertificate());
+			//a po zmianach:
+			ProtectionParameter prot = new KeyStore.PasswordProtection(null);
+			keyStore.setEntry(certificateToken.getDSSIdAsString(), new KeyStore.TrustedCertificateEntry(certificateToken.getCertificate()), prot );
+			System.out.println("DSSIdAsString="+certificateToken.getDSSIdAsString());
+			List<CertificateToken> ls = getCertificates();
+			for (Iterator iterator = ls.iterator(); iterator.hasNext();) {
+				CertificateToken ctn = (CertificateToken) iterator.next();
+				System.out.println(ctn.getDSSIdAsString());
+			}
+			//koniec zmian
+			
 		} catch (GeneralSecurityException e) {
 			throw new DSSException("Unable to add certificate to the keystore", e);
 		}
