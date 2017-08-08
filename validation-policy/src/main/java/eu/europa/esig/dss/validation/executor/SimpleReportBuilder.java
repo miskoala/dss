@@ -49,6 +49,7 @@ import eu.europa.esig.dss.jaxb.simplereport.XmlPolicy;
 import eu.europa.esig.dss.jaxb.simplereport.XmlSignature;
 import eu.europa.esig.dss.jaxb.simplereport.XmlSignatureLevel;
 import eu.europa.esig.dss.jaxb.simplereport.XmlSignatureScope;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.utils.Utils;
 import eu.europa.esig.dss.validation.AttributeValue;
 import eu.europa.esig.dss.validation.SignatureQualification;
@@ -74,6 +75,8 @@ public class SimpleReportBuilder {
 
 	private int totalSignatureCount = 0;
 	private int validSignatureCount = 0;
+	
+	private DSSLocale dssLocale;
 
 	public SimpleReportBuilder(Date currentTime, ValidationPolicy policy, DiagnosticData diagnosticData, ValidationLevel validationLevel,
 			DetailedReport detailedReport) {
@@ -486,5 +489,14 @@ public class SimpleReportBuilder {
 			}
 		}
 	}
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
+	}
 
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
+	}
 }

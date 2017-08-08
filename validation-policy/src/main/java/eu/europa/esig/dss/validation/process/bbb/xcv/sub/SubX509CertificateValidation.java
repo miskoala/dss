@@ -120,7 +120,7 @@ public class SubX509CertificateValidation extends Chain<XmlSubXCV> {
 		if (!isRevocationNoNeedCheck(currentCertificate)) {
 			RevocationFreshnessChecker rfc = new RevocationFreshnessChecker(currentCertificate.getLatestRevocationData(), currentTime, context, subContext,
 					validationPolicy);
-			XmlRFC rfcResult = rfc.execute();
+			XmlRFC rfcResult = rfc.execute(getDssLocale());
 			result.setRFC(rfcResult);
 
 			item = item.setNextItem(checkRevocationFreshnessCheckerResult(rfcResult));

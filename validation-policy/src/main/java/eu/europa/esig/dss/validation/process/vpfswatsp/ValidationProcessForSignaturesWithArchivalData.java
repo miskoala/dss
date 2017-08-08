@@ -134,7 +134,7 @@ public class ValidationProcessForSignaturesWithArchivalData extends Chain<XmlVal
 					else {
 						PastSignatureValidation psv = new PastSignatureValidation(newestTimestamp, diagnosticData, bbbTsp, poe, currentTime, policy,
 								Context.TIMESTAMP);
-						XmlPSV psvResult = psv.execute();
+						XmlPSV psvResult = psv.execute(getDssLocale());
 						bbbTsp.setPSV(psvResult);
 
 						/*

@@ -7,6 +7,7 @@ import java.util.Set;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlConclusion;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlQMatrixBlock;
 import eu.europa.esig.dss.jaxb.diagnostic.XmlTrustedList;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.utils.Utils;
 import eu.europa.esig.dss.validation.policy.ValidationPolicy;
 import eu.europa.esig.dss.validation.process.qmatrix.qualification.SignatureQualificationBlock;
@@ -20,6 +21,7 @@ public class QMatrixBlock {
 	private final DiagnosticData diagnosticData;
 	private final ValidationPolicy policy;
 	private final Date currentTime;
+	private DSSLocale dssLocale;
 
 	public QMatrixBlock(XmlConclusion etsi319102Conclusion, DiagnosticData diagnosticData, ValidationPolicy policy, Date currentTime) {
 		this.etsi319102Conclusion = etsi319102Conclusion;
@@ -35,7 +37,8 @@ public class QMatrixBlock {
 		XmlTrustedList listOfTrustedLists = diagnosticData.getListOfTrustedLists();
 		if (listOfTrustedLists != null) {
 			TLValidationBlock tlValidation = new TLValidationBlock(listOfTrustedLists, currentTime, policy);
-			block.getTLAnalysis().add(tlValidation.execute());
+			tlValidation.setDssLocale(getDssLocale());
+			block.getTLAnalysis().add(tlValidation.execute(getDssLocale()));
 		}
 
 		// Validate used trusted lists
@@ -43,7 +46,7 @@ public class QMatrixBlock {
 		if (Utils.isCollectionNotEmpty(trustedLists)) {
 			for (XmlTrustedList xmlTrustedList : trustedLists) {
 				TLValidationBlock tlValidation = new TLValidationBlock(xmlTrustedList, currentTime, policy);
-				block.getTLAnalysis().add(tlValidation.execute());
+				block.getTLAnalysis().add(tlValidation.execute(getDssLocale()));
 			}
 		}
 
@@ -53,11 +56,20 @@ public class QMatrixBlock {
 			for (SignatureWrapper signature : allSignatures) {
 				SignatureQualificationBlock sigQualBlock = new SignatureQualificationBlock(etsi319102Conclusion, block.getTLAnalysis(), signature,
 						diagnosticData, policy);
-				block.getSignatureAnalysis().add(sigQualBlock.execute());
+				block.getSignatureAnalysis().add(sigQualBlock.execute(getDssLocale()));
 			}
 		}
 
 		return block;
 	}
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
+	}
 
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
+	}
 }

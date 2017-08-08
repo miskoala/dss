@@ -60,7 +60,7 @@ public class X509CertificateValidation extends Chain<XmlXCV> {
 
 		SubX509CertificateValidation certificateValidation = new SubX509CertificateValidation(currentCertificate, currentTime, context, SubContext.SIGNING_CERT,
 				validationPolicy);
-		XmlSubXCV subXCV = certificateValidation.execute();
+		XmlSubXCV subXCV = certificateValidation.execute(getDssLocale());
 		result.getSubXCV().add(subXCV);
 
 		// Check CA_CERTIFICATEs
@@ -70,7 +70,7 @@ public class X509CertificateValidation extends Chain<XmlXCV> {
 				CertificateWrapper certificate = diagnosticData.getUsedCertificateByIdNullSafe(chainCertificate.getId());
 
 				certificateValidation = new SubX509CertificateValidation(certificate, currentTime, context, SubContext.CA_CERTIFICATE, validationPolicy);
-				subXCV = certificateValidation.execute();
+				subXCV = certificateValidation.execute(getDssLocale());
 				result.getSubXCV().add(subXCV);
 			}
 		}

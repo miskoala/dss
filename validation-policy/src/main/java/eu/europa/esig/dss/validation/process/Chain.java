@@ -6,6 +6,7 @@ import eu.europa.esig.dss.jaxb.detailedreport.XmlConclusion;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlConstraint;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlConstraintsConclusion;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlName;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.validation.policy.rules.Indication;
 import eu.europa.esig.jaxb.policy.Level;
 import eu.europa.esig.jaxb.policy.LevelConstraint;
@@ -26,6 +27,7 @@ import eu.europa.esig.jaxb.policy.LevelConstraint;
  */
 public abstract class Chain<T extends XmlConstraintsConclusion> {
 
+	protected DSSLocale dssLocale;
 	/**
 	 * The result object : a sub-class of {@code XmlConstraintsConclusion}
 	 */
@@ -51,10 +53,12 @@ public abstract class Chain<T extends XmlConstraintsConclusion> {
 	 * 
 	 * @return the complete result with constraints and final conclusion for the chain
 	 */
-	public T execute() {
+	public T execute(DSSLocale dssLocale) {
+		setDssLocale(dssLocale);
 		initChain();
 
 		if (firstItem != null) {
+			firstItem.setDssLocale(getDssLocale());
 			firstItem.execute();
 		}
 
@@ -113,4 +117,15 @@ public abstract class Chain<T extends XmlConstraintsConclusion> {
 		}
 	}
 
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
+	}
+
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
+	}
+	
 }

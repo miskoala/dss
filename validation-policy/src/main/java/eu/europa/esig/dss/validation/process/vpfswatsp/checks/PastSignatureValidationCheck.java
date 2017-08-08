@@ -46,7 +46,7 @@ public class PastSignatureValidationCheck extends ChainItem<XmlValidationProcess
 	@Override
 	protected boolean process() {
 		PastSignatureValidation psv = new PastSignatureValidation(signature, diagnosticData, bbb, poe, currentTime, policy, context);
-		XmlPSV psvResult = psv.execute();
+		XmlPSV psvResult = psv.execute(getDssLocale());
 		bbb.setPSV(psvResult);
 
 		if (isValid(psvResult)) {
