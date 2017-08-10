@@ -430,7 +430,7 @@ public class CustomProcessExecutorTest {
 		assertEquals(3, xmlSignature.getCertificateChain().getCertificate().size());
 		ByteArrayOutputStream s = new ByteArrayOutputStream();
 		JAXB.marshal(simpleReport.getJaxbModel(), s);
-		System.out.println(s.toString());
+		//System.out.println(s.toString());
 	}
 	
 	@Test
@@ -454,7 +454,7 @@ public class CustomProcessExecutorTest {
 		assertEquals(3, xmlSignature.getCertificateChain().getCertificate().size());
 		ByteArrayOutputStream s = new ByteArrayOutputStream();
 		JAXB.marshal(simpleReport.getJaxbModel(), s);
-		System.out.println(s.toString());
+		//System.out.println(s.toString());
 	}
 	
 	@Test
