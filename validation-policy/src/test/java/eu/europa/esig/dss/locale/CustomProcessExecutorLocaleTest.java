@@ -44,6 +44,7 @@ public class CustomProcessExecutorLocaleTest {
 		Reports reports = executor.execute();
 		assertNotNull(reports);
 		String simpleReport = reports.getXmlSimpleReport();
+		System.out.println(simpleReport);
 		assertNotNull(simpleReport);
 		String detailedReport = reports.getXmlDetailedReport();
 		assertNotNull(detailedReport);

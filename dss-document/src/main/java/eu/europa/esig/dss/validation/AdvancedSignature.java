@@ -30,6 +30,7 @@ import eu.europa.esig.dss.DigestAlgorithm;
 import eu.europa.esig.dss.EncryptionAlgorithm;
 import eu.europa.esig.dss.SignatureForm;
 import eu.europa.esig.dss.SignatureLevel;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.x509.CertificateToken;
 import eu.europa.esig.dss.x509.SignatureCertificateSource;
 import eu.europa.esig.dss.x509.SignaturePolicy;
@@ -418,5 +419,7 @@ public interface AdvancedSignature extends Serializable {
 	void findSignatureScope(SignatureScopeFinder signatureScopeFinder);
 
 	List<SignatureScope> getSignatureScopes();
-
+	
+	DSSLocale getDssLocale();
+	void setDssLocale(DSSLocale dssLocale);
 }

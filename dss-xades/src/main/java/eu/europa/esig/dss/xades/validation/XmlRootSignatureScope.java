@@ -25,12 +25,12 @@ import java.util.List;
 public class XmlRootSignatureScope extends XmlElementSignatureScope {
 
     protected XmlRootSignatureScope(final List<String> transformations) {
-        super("Full XML File", transformations);
+        super("FULL_XML_FILE", transformations);
     }
 
     @Override
     public String getDescription() {
-        String description = "The full XML file";
+        String description = getDssLocale().getLocalizedMessage("THE_FULL_XML_FILE");
         if (getTransformations().isEmpty()) {
             return description;
         } else {

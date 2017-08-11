@@ -20,6 +20,8 @@
  */
 package eu.europa.esig.dss.validation;
 
+import eu.europa.esig.dss.locale.DSSLocale;
+
 /**
  * This class describes the scope of the signature
  */
@@ -29,18 +31,29 @@ public abstract class SignatureScope {
 	 * The name of the item on which this signature scope applies
 	 */
 	private final String name;
+	private DSSLocale dssLocale;
 
 	protected SignatureScope(final String name) {
 		this.name = name;
 	}
 
 	public String getName() {
-		return name;
+		return getDssLocale().getLocalizedMessage(name);
 	}
 
 	public abstract String getDescription();
 
 	public String getType() {
 		return getClass().getSimpleName();
+	}
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
+	}
+
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
 	}
 }

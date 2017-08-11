@@ -123,7 +123,7 @@
                     <source>${project.source.version}</source>
                     <target>${project.target.version}</target>
                     <debug>true</debug>
-                    <debuglevel>lines, vars, source</debuglevel>
+                    <debuglevel>lines,vars,source</debuglevel>
                 </configuration>
 			</plugin>
 			<plugin>

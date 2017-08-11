@@ -23,6 +23,7 @@ package eu.europa.esig.dss.validation;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -35,6 +36,7 @@ import eu.europa.esig.dss.DSSRevocationUtils;
 import eu.europa.esig.dss.DSSUtils;
 import eu.europa.esig.dss.DigestAlgorithm;
 import eu.europa.esig.dss.SignatureLevel;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.utils.Utils;
 import eu.europa.esig.dss.x509.CertificatePool;
 import eu.europa.esig.dss.x509.CertificateToken;
@@ -115,6 +117,8 @@ public abstract class DefaultAdvancedSignature implements AdvancedSignature {
 	private List<SignatureScope> signatureScopes;
 
 	private String signatureFilename;
+
+	private DSSLocale dssLocale;
 
 	/**
 	 * @param certPool
@@ -495,6 +499,9 @@ public abstract class DefaultAdvancedSignature implements AdvancedSignature {
 	@Override
 	public void findSignatureScope(SignatureScopeFinder signatureScopeFinder) {
 		signatureScopes = signatureScopeFinder.findSignatureScope(this);
+		for (SignatureScope signatureScope : signatureScopes) {
+			signatureScope.setDssLocale(getDssLocale());
+		}
 	}
 
 	@Override
@@ -517,5 +524,14 @@ public abstract class DefaultAdvancedSignature implements AdvancedSignature {
 		}
 		archiveTimestamps.add(timestamp);
 	}
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
+	}
 
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
+	}
 }

@@ -36,6 +36,7 @@ import eu.europa.esig.dss.DSSDocument;
 import eu.europa.esig.dss.DSSException;
 import eu.europa.esig.dss.DSSUtils;
 import eu.europa.esig.dss.jaxb.diagnostic.DiagnosticData;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.utils.Utils;
 import eu.europa.esig.dss.validation.executor.CustomProcessExecutor;
 import eu.europa.esig.dss.validation.executor.ProcessExecutor;
@@ -104,6 +105,8 @@ public abstract class SignedDocumentValidator implements DocumentValidator {
 	private ValidationLevel validationLevel = ValidationLevel.ARCHIVAL_DATA;
 
 	private static List<Class<SignedDocumentValidator>> registredDocumentValidators = new ArrayList<Class<SignedDocumentValidator>>();
+
+	private DSSLocale dssLocale;
 
 	static {
 		Properties properties = new Properties();
@@ -318,6 +321,7 @@ public abstract class SignedDocumentValidator implements DocumentValidator {
 		validationContext.validate();
 
 		for (final AdvancedSignature signature : allSignatureList) {
+			signature.setDssLocale(getDssLocale());
 			signature.checkSigningCertificate();
 			signature.checkSignatureIntegrity();
 			signature.validateTimestamps();
@@ -327,6 +331,7 @@ public abstract class SignedDocumentValidator implements DocumentValidator {
 			signature.checkSignaturePolicy(signaturePolicyProvider);
 
 			if (signatureScopeFinder != null) {
+				//signatureScopeFinder.setDssLocale(getDssLocale());
 				signature.findSignatureScope(signatureScopeFinder);
 			}
 		}
@@ -377,6 +382,7 @@ public abstract class SignedDocumentValidator implements DocumentValidator {
 	public ProcessExecutor provideProcessExecutorInstance() {
 		if (processExecutor == null) {
 			processExecutor = new CustomProcessExecutor();
+			processExecutor.setDssLocale(getDssLocale());
 		}
 		return processExecutor;
 	}
@@ -450,5 +456,14 @@ public abstract class SignedDocumentValidator implements DocumentValidator {
 	private boolean isRequireStructuralValidation(ValidationPolicy validationPolicy) {
 		return ((validationPolicy != null) && (validationPolicy.getStructuralValidationConstraint(Context.SIGNATURE) != null));
 	}
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
+	}
 
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
+	}
 }
