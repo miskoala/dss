@@ -4,6 +4,7 @@ import java.util.Date;
 
 import eu.europa.esig.dss.jaxb.detailedreport.DetailedReport;
 import eu.europa.esig.dss.jaxb.simplereport.SimpleReport;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.validation.policy.ValidationPolicy;
 import eu.europa.esig.dss.validation.reports.Reports;
 import eu.europa.esig.dss.validation.reports.wrapper.DiagnosticData;
@@ -17,6 +18,8 @@ public class CustomProcessExecutor implements ProcessExecutor {
 	private DiagnosticData diagnosticData;
 
 	private ValidationPolicy policy;
+	
+	private DSSLocale dssLocale;
 
 	@Override
 	public void setCurrentTime(Date currentTime) {
@@ -46,9 +49,11 @@ public class CustomProcessExecutor implements ProcessExecutor {
 		diagnosticData = new DiagnosticData(jaxbDiagnosticData);
 
 		DetailedReportBuilder detailedReportBuilder = new DetailedReportBuilder(currentTime, policy, validationLevel, diagnosticData);
+		detailedReportBuilder.setDssLocale(getDssLocale());
 		DetailedReport detailedReport = detailedReportBuilder.build();
 
 		SimpleReportBuilder simpleReportBuilder = new SimpleReportBuilder(currentTime, policy, diagnosticData, validationLevel, detailedReport);
+		simpleReportBuilder.setDssLocale(getDssLocale());
 		SimpleReport simpleReport = simpleReportBuilder.build();
 
 		return new Reports(jaxbDiagnosticData, detailedReport, simpleReport);
@@ -64,4 +69,19 @@ public class CustomProcessExecutor implements ProcessExecutor {
 		return policy;
 	}
 
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
+	}
+
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
+	}
+
+
+
+	
+	
 }

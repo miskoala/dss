@@ -17,6 +17,7 @@ import eu.europa.esig.dss.jaxb.detailedreport.XmlName;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlSAV;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlVCI;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlXCV;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.utils.Utils;
 import eu.europa.esig.dss.validation.policy.Context;
 import eu.europa.esig.dss.validation.policy.ValidationPolicy;
@@ -49,6 +50,8 @@ public class BasicBuildingBlocks {
 	private final ValidationPolicy policy;
 	private final Date currentTime;
 	private final Context context;
+
+	private DSSLocale dssLocale;
 
 	public BasicBuildingBlocks(DiagnosticData diagnosticData, TokenProxy token, Date currentTime, ValidationPolicy policy, Context context) {
 		this.diagnosticData = diagnosticData;
@@ -155,7 +158,7 @@ public class BasicBuildingBlocks {
 	private XmlFC executeFormatChecking() {
 		if (Context.SIGNATURE.equals(context)) {
 			FormatChecking fc = new FormatChecking(diagnosticData, (SignatureWrapper) token, context, policy);
-			return fc.execute();
+			return fc.execute(getDssLocale());
 		} else {
 			return null;
 		}
@@ -163,20 +166,20 @@ public class BasicBuildingBlocks {
 
 	private XmlISC executeIdentificationOfTheSigningCertificate() {
 		IdentificationOfTheSigningCertificate isc = new IdentificationOfTheSigningCertificate(diagnosticData, token, context, policy);
-		return isc.execute();
+		return isc.execute(getDssLocale());
 	}
 
 	private XmlVCI executeValidationContextInitialization() {
 		if (Context.SIGNATURE.equals(context)) {
 			ValidationContextInitialization vci = new ValidationContextInitialization((SignatureWrapper) token, context, policy);
-			return vci.execute();
+			return vci.execute(getDssLocale());
 		}
 		return null;
 	}
 
 	private XmlCV executeCryptographicVerification() {
 		CryptographicVerification cv = new CryptographicVerification(diagnosticData, token, context, policy);
-		return cv.execute();
+		return cv.execute(getDssLocale());
 	}
 
 	private XmlXCV executeX509CertificateValidation() {
@@ -185,15 +188,15 @@ public class BasicBuildingBlocks {
 			if (Context.SIGNATURE.equals(context) || Context.COUNTER_SIGNATURE.equals(context)) {
 				X509CertificateValidation xcv = new X509CertificateValidation(diagnosticData, certificate, currentTime, certificate.getNotBefore(), context,
 						policy);
-				return xcv.execute();
+				return xcv.execute(getDssLocale());
 			} else if (Context.TIMESTAMP.equals(context)) {
 				X509CertificateValidation xcv = new X509CertificateValidation(diagnosticData, certificate, currentTime,
 						((TimestampWrapper) token).getProductionTime(), context, policy);
-				return xcv.execute();
+				return xcv.execute(getDssLocale());
 			} else if (Context.REVOCATION.equals(context)) {
 				X509CertificateValidation xcv = new X509CertificateValidation(diagnosticData, certificate, currentTime,
 						((RevocationWrapper) token).getProductionDate(), context, policy);
-				return xcv.execute();
+				return xcv.execute(getDssLocale());
 			} else {
 				LOG.info("Unsupported context " + context);
 			}
@@ -212,7 +215,16 @@ public class BasicBuildingBlocks {
 		} else {
 			LOG.info("Unsupported context " + context);
 		}
-		return aav != null ? aav.execute() : null;
+		return aav != null ? aav.execute(getDssLocale()) : null;
+	}
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
 	}
 
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
+	}
 }

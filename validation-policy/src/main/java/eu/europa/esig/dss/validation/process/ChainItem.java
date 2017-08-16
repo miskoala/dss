@@ -11,6 +11,7 @@ import eu.europa.esig.dss.jaxb.detailedreport.XmlConstraint;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlConstraintsConclusion;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlName;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlStatus;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.utils.Utils;
 import eu.europa.esig.dss.validation.policy.rules.Indication;
 import eu.europa.esig.dss.validation.policy.rules.SubIndication;
@@ -39,6 +40,8 @@ public abstract class ChainItem<T extends XmlConstraintsConclusion> {
 	private final LevelConstraint constraint;
 
 	private String bbbId;
+	
+	private DSSLocale dssLocale;
 
 	/**
 	 * Common constructor
@@ -196,7 +199,7 @@ public abstract class ChainItem<T extends XmlConstraintsConclusion> {
 		XmlName xmlName = new XmlName();
 		if (messageTag != null) {
 			xmlName.setNameId(messageTag.name());
-			xmlName.setValue(messageTag.getMessage());
+			xmlName.setValue(getDssLocale().getLocalizedMessage(messageTag.name()));
 		} else {
 			LOG.error("MessageTag is null");
 		}
@@ -250,6 +253,7 @@ public abstract class ChainItem<T extends XmlConstraintsConclusion> {
 
 	private void callNext() {
 		if (nextItem != null) {
+			nextItem.setDssLocale(getDssLocale());
 			nextItem.execute();
 		}
 	}
@@ -274,4 +278,15 @@ public abstract class ChainItem<T extends XmlConstraintsConclusion> {
 		return conclusion != null && !Indication.FAILED.equals(conclusion.getIndication());
 	}
 
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
+	}
+
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
+	}
+	
 }

@@ -17,6 +17,7 @@ import eu.europa.esig.dss.jaxb.detailedreport.XmlSignature;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlValidationProcessArchivalData;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlValidationProcessBasicSignatures;
 import eu.europa.esig.dss.jaxb.detailedreport.XmlValidationProcessLongTermData;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.validation.policy.Context;
 import eu.europa.esig.dss.validation.policy.ValidationPolicy;
 import eu.europa.esig.dss.validation.process.bbb.BasicBuildingBlocks;
@@ -38,6 +39,8 @@ public class DetailedReportBuilder {
 	private final ValidationPolicy policy;
 	private final ValidationLevel validationLevel;
 	private final DiagnosticData diagnosticData;
+	
+	private DSSLocale dssLocale;
 
 	public DetailedReportBuilder(Date currentTime, ValidationPolicy policy, ValidationLevel validationLevel, DiagnosticData diagnosticData) {
 		this.currentTime = currentTime;
@@ -78,6 +81,7 @@ public class DetailedReportBuilder {
 			if (policy.isEIDASConstraintPresent()) {
 				try {
 					QMatrixBlock qmatrix = new QMatrixBlock(conlusion, diagnosticData, policy, currentTime);
+					qmatrix.setDssLocale(getDssLocale());
 					detailedReport.setQMatrixBlock(qmatrix.execute());
 				} catch (Exception e) {
 					LOG.error("Unable to determine the signature qualification", e);
@@ -90,7 +94,7 @@ public class DetailedReportBuilder {
 
 	private XmlConclusion executeBasicValidation(XmlSignature signatureAnalysis, SignatureWrapper signature, Map<String, XmlBasicBuildingBlocks> bbbs) {
 		ValidationProcessForBasicSignatures vpfbs = new ValidationProcessForBasicSignatures(diagnosticData, signature, bbbs);
-		XmlValidationProcessBasicSignatures bs = vpfbs.execute();
+		XmlValidationProcessBasicSignatures bs = vpfbs.execute(getDssLocale());
 		signatureAnalysis.setValidationProcessBasicSignatures(bs);
 		return bs.getConclusion();
 	}
@@ -99,14 +103,14 @@ public class DetailedReportBuilder {
 		List<TimestampWrapper> allTimestamps = signature.getTimestampList(); // PVA : all timestamps here ? Used in LTV
 		for (TimestampWrapper timestamp : allTimestamps) {
 			ValidationProcessForTimeStamps vpftsp = new ValidationProcessForTimeStamps(timestamp, bbbs);
-			signatureAnalysis.getValidationProcessTimestamps().add(vpftsp.execute());
+			signatureAnalysis.getValidationProcessTimestamps().add(vpftsp.execute(getDssLocale()));
 		}
 	}
 
 	private XmlConclusion executeLongTermValidation(XmlSignature signatureAnalysis, SignatureWrapper signature, Map<String, XmlBasicBuildingBlocks> bbbs) {
 		ValidationProcessForSignaturesWithLongTermValidationData vpfltvd = new ValidationProcessForSignaturesWithLongTermValidationData(signatureAnalysis,
 				diagnosticData, signature, bbbs, policy, currentTime);
-		XmlValidationProcessLongTermData vpfltvdResult = vpfltvd.execute();
+		XmlValidationProcessLongTermData vpfltvdResult = vpfltvd.execute(getDssLocale());
 		signatureAnalysis.setValidationProcessLongTermData(vpfltvdResult);
 		return vpfltvdResult.getConclusion();
 	}
@@ -114,7 +118,7 @@ public class DetailedReportBuilder {
 	private XmlConclusion executeArchiveValidation(XmlSignature signatureAnalysis, SignatureWrapper signature, Map<String, XmlBasicBuildingBlocks> bbbs) {
 		ValidationProcessForSignaturesWithArchivalData vpfswad = new ValidationProcessForSignaturesWithArchivalData(signatureAnalysis, signature,
 				diagnosticData, bbbs, policy, currentTime);
-		XmlValidationProcessArchivalData vpfswadResult = vpfswad.execute();
+		XmlValidationProcessArchivalData vpfswadResult = vpfswad.execute(getDssLocale());
 		signatureAnalysis.setValidationProcessArchivalData(vpfswadResult);
 		return vpfswadResult.getConclusion();
 	}
@@ -147,9 +151,21 @@ public class DetailedReportBuilder {
 	private void process(Set<? extends AbstractTokenProxy> tokensToProcess, Context context, Map<String, XmlBasicBuildingBlocks> bbbs) {
 		for (AbstractTokenProxy token : tokensToProcess) {
 			BasicBuildingBlocks bbb = new BasicBuildingBlocks(diagnosticData, token, currentTime, policy, context);
+			bbb.setDssLocale(getDssLocale());
 			XmlBasicBuildingBlocks result = bbb.execute();
 			bbbs.put(token.getId(), result);
 		}
+	}
+
+	public DSSLocale getDssLocale() {
+		if(dssLocale==null) {
+			dssLocale=DSSLocale.getDefaultDSSLocale();
+		}
+		return dssLocale;
+	}
+
+	public void setDssLocale(DSSLocale dssLocale) {
+		this.dssLocale = dssLocale;
 	}
 
 }

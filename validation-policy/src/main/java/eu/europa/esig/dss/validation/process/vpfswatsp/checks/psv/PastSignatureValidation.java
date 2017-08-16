@@ -56,7 +56,7 @@ public class PastSignatureValidation extends Chain<XmlPSV> {
 		final List<XmlName> currentTimeErrors = bbb.getConclusion().getErrors();
 
 		PastCertificateValidation pcv = new PastCertificateValidation(token, diagnosticData, bbb, poe, currentTime, policy, context);
-		XmlPCV pcvResult = pcv.execute();
+		XmlPCV pcvResult = pcv.execute(getDssLocale());
 		bbb.setPCV(pcvResult);
 
 		/*

@@ -26,6 +26,7 @@ import org.slf4j.LoggerFactory;
 
 import eu.europa.esig.dss.jaxb.diagnostic.DiagnosticData;
 import eu.europa.esig.dss.jaxb.simplereport.XmlSignature;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.utils.Utils;
 import eu.europa.esig.dss.validation.SignatureQualification;
 import eu.europa.esig.dss.validation.policy.EtsiValidationPolicy;
@@ -394,7 +395,7 @@ public class CustomProcessExecutorTest {
 		SimpleReport simpleReport = reports.getSimpleReport();
 		assertEquals(SignatureQualification.NA, simpleReport.getSignatureQualification(simpleReport.getFirstSignatureId()));
 	}
-
+	
 	@Test
 	public void noSigningTime() throws Exception {
 		FileInputStream fis = new FileInputStream("src/test/resources/no-signing-date.xml");
@@ -412,7 +413,7 @@ public class CustomProcessExecutorTest {
 		assertEquals(Indication.INDETERMINATE, simpleReport.getIndication(simpleReport.getFirstSignatureId()));
 		assertEquals(SignatureQualification.INDETERMINATE_ADESIG, simpleReport.getSignatureQualification(simpleReport.getFirstSignatureId()));
 	}
-
+	
 	@Test
 	public void testCertChain() throws Exception {
 		FileInputStream fis = new FileInputStream("src/test/resources/qualifNA.xml");
@@ -425,7 +426,7 @@ public class CustomProcessExecutorTest {
 		executor.setCurrentTime(diagnosticData.getValidationDate());
 
 		Reports reports = executor.execute();
-
+		
 		SimpleReport simpleReport = reports.getSimpleReport();
 		assertEquals(1, simpleReport.getJaxbModel().getSignaturesCount());
 		XmlSignature xmlSignature = simpleReport.getJaxbModel().getSignature().get(0);
@@ -433,8 +434,33 @@ public class CustomProcessExecutorTest {
 		assertEquals(3, xmlSignature.getCertificateChain().getCertificate().size());
 		ByteArrayOutputStream s = new ByteArrayOutputStream();
 		JAXB.marshal(simpleReport.getJaxbModel(), s);
+		//System.out.println(s.toString());
 	}
+	
+	@Test
+	public void testCertLocalePLChain() throws Exception {
+		FileInputStream fis = new FileInputStream("src/test/resources/qualifNA.xml");
+		DiagnosticData diagnosticData = getJAXBObjectFromString(fis, DiagnosticData.class, "/xsd/DiagnosticData.xsd");
+		assertNotNull(diagnosticData);
 
+		CustomProcessExecutor executor = new CustomProcessExecutor();
+		executor.setDssLocale(new DSSLocale("pl"));
+		executor.setDiagnosticData(diagnosticData);
+		executor.setValidationPolicy(loadPolicy());
+		executor.setCurrentTime(diagnosticData.getValidationDate());
+
+		Reports reports = executor.execute();
+		
+		SimpleReport simpleReport = reports.getSimpleReport();
+		assertEquals(1, simpleReport.getJaxbModel().getSignaturesCount());
+		XmlSignature xmlSignature = simpleReport.getJaxbModel().getSignature().get(0);
+		assertTrue(!xmlSignature.getCertificateChain().getCertificate().isEmpty());
+		assertEquals(3, xmlSignature.getCertificateChain().getCertificate().size());
+		ByteArrayOutputStream s = new ByteArrayOutputStream();
+		JAXB.marshal(simpleReport.getJaxbModel(), s);
+		//System.out.println(s.toString());
+	}
+	
 	@Test
 	public void testWithoutCertChain() throws Exception {
 		FileInputStream fis = new FileInputStream("src/test/resources/qualifNAWithoutCertChain.xml");

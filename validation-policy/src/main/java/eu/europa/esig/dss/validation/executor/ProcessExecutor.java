@@ -23,6 +23,7 @@ package eu.europa.esig.dss.validation.executor;
 import java.util.Date;
 
 import eu.europa.esig.dss.jaxb.diagnostic.DiagnosticData;
+import eu.europa.esig.dss.locale.DSSLocale;
 import eu.europa.esig.dss.validation.policy.ValidationPolicy;
 import eu.europa.esig.dss.validation.reports.Reports;
 
@@ -76,5 +77,8 @@ public interface ProcessExecutor {
 	Reports execute();
 
 	Date getCurrentTime();
+	
+	DSSLocale getDssLocale();
+	void setDssLocale(DSSLocale dssLocale);
 
 }

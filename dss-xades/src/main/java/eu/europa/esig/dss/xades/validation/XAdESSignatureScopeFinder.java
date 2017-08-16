@@ -93,6 +93,8 @@ public class XAdESSignatureScopeFinder implements SignatureScopeFinder<XAdESSign
 			final List<String> transformations = getTransformationNames(signatureReference);
 			if (Utils.isStringBlank(uri)) {
 				// self contained document
+				XmlRootSignatureScope xmlRootSignatureScope = new XmlRootSignatureScope(transformations);
+				xmlRootSignatureScope.setDssLocale(xadesSignature.getDssLocale());
 				result.add(new XmlRootSignatureScope(transformations));
 			} else if (uri.startsWith("#")) {
 				// internal reference

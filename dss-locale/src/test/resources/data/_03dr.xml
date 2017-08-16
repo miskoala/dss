@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DetailedReport xmlns="http://dss.esig.europa.eu/validation/detailed-report">
+    <Signatures Id="Signature-86c36a4a-5882-4984-848a-5febacfed192">
+        <ValidationProcessBasicSignatures>
+            <Constraint Id="Signature-86c36a4a-5882-4984-848a-5febacfed192">
+                <Name NameId="ADEST_ROBVPIIC">[Do tlumaczenia] (Brak tłumaczenia)Is the result of the Basic Validation Process conclusive?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessBasicSignatures>
+        <ValidationProcessLongTermData>
+            <Constraint>
+                <Name NameId="LTV_ABSV">[Do tlumaczenia] Czy wynik procesu podstawowej walidacji jest zadowalający?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="ead587eb5f0c2793681d964a296ba4cb97b56651ad18813a44c06c4c59bf383d861276ab8028b7ee2fbac3dadd6e5940f484bc252a2842d3526b6166b4aec430">
+                <Name NameId="ADEST_RORPIIC">[Do tlumaczenia] (Brak tłumaczenia)Is the result of the revocation data validation process acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessLongTermData>
+        <ValidationProcessArchivalData>
+            <Constraint>
+                <Name NameId="ARCH_LTVV">[Do tlumaczenia] Is the result of the LTV validation process acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessArchivalData>
+    </Signatures>
+    <Signatures Id="Signature-52abf6c0-67ec-40d4-b73d-08ab4f6691d0">
+        <ValidationProcessBasicSignatures>
+            <Constraint Id="Signature-52abf6c0-67ec-40d4-b73d-08ab4f6691d0">
+                <Name NameId="ADEST_ROBVPIIC">[Do tlumaczenia] (Brak tłumaczenia)Is the result of the Basic Validation Process conclusive?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessBasicSignatures>
+        <ValidationProcessLongTermData>
+            <Constraint>
+                <Name NameId="LTV_ABSV">[Do tlumaczenia] Czy wynik procesu podstawowej walidacji jest zadowalający?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="ead587eb5f0c2793681d964a296ba4cb97b56651ad18813a44c06c4c59bf383d861276ab8028b7ee2fbac3dadd6e5940f484bc252a2842d3526b6166b4aec430">
+                <Name NameId="ADEST_RORPIIC">[Do tlumaczenia] (Brak tłumaczenia)Is the result of the revocation data validation process acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessLongTermData>
+        <ValidationProcessArchivalData>
+            <Constraint>
+                <Name NameId="ARCH_LTVV">[Do tlumaczenia] Is the result of the LTV validation process acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessArchivalData>
+    </Signatures>
+    <Signatures Id="ID-8b009720-f82c-11e6-ae9c-0050569a5ac0">
+        <ValidationProcessBasicSignatures>
+            <Constraint Id="ID-8b009720-f82c-11e6-ae9c-0050569a5ac0">
+                <Name NameId="ADEST_ROBVPIIC">[Do tlumaczenia] (Brak tłumaczenia)Is the result of the Basic Validation Process conclusive?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessBasicSignatures>
+        <ValidationProcessLongTermData>
+            <Constraint>
+                <Name NameId="LTV_ABSV">[Do tlumaczenia] Czy wynik procesu podstawowej walidacji jest zadowalający?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="d30fa7d4fa90904884ddeed35b989da84d82d742580e2625d56625c07c572ff8bdce6342e059ef41175ea3281d8dd27f4c17ede5010fb59092d0292a6bed7ccc">
+                <Name NameId="ADEST_RORPIIC">[Do tlumaczenia] (Brak tłumaczenia)Is the result of the revocation data validation process acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessLongTermData>
+        <ValidationProcessArchivalData>
+            <Constraint>
+                <Name NameId="ARCH_LTVV">[Do tlumaczenia] Is the result of the LTV validation process acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessArchivalData>
+    </Signatures>
+    <Signatures Id="ID-e5b77ba0-1b6a-11e7-a15a-0050569a0676">
+        <ValidationProcessBasicSignatures>
+            <Constraint Id="ID-e5b77ba0-1b6a-11e7-a15a-0050569a0676">
+                <Name NameId="ADEST_ROBVPIIC">[Do tlumaczenia] (Brak tłumaczenia)Is the result of the Basic Validation Process conclusive?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessBasicSignatures>
+        <ValidationProcessLongTermData>
+            <Constraint>
+                <Name NameId="LTV_ABSV">[Do tlumaczenia] Czy wynik procesu podstawowej walidacji jest zadowalający?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="d30fa7d4fa90904884ddeed35b989da84d82d742580e2625d56625c07c572ff8bdce6342e059ef41175ea3281d8dd27f4c17ede5010fb59092d0292a6bed7ccc">
+                <Name NameId="ADEST_RORPIIC">[Do tlumaczenia] (Brak tłumaczenia)Is the result of the revocation data validation process acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessLongTermData>
+        <ValidationProcessArchivalData>
+            <Constraint>
+                <Name NameId="ARCH_LTVV">[Do tlumaczenia] Is the result of the LTV validation process acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </ValidationProcessArchivalData>
+    </Signatures>
+    <BasicBuildingBlocks Id="Signature-52abf6c0-67ec-40d4-b73d-08ab4f6691d0" Type="SIGNATURE">
+        <FC>
+            <Constraint>
+                <Name NameId="BBB_FC_IEFF">Czy taki format jest oczekiwany? [Is the expected format found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </FC>
+        <ISC>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCI">[Do tłumaczenia] Is there an identified candidate for the signing certificate?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCS">[Do tlumaczenia] [Do tlumaczenia] Is the signing certificate signed?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISASCP">[Do tlumaczenia] Is the signed attribute: 'signing-certificate' present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISACDP">[Do tlumaczenia] Is the signed attribute: 'cert-digest' of the certificate present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ICDVV">[Do tlumaczenia] Is the certificate's digest value valid?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_AIDNASNE">[Do tlumaczenia] Are the issuer distinguished name and the serial number equal?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <CertificateChain>
+                <ChainItem Id="EAD587EB5F0C2793681D964A296BA4CB97B56651AD18813A44C06C4C59BF383D">
+                    <Source>SIGNATURE</Source>
+                </ChainItem>
+                <ChainItem Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B">
+                    <Source>TRUSTED_LIST</Source>
+                </ChainItem>
+            </CertificateChain>
+        </ISC>
+        <VCI>
+            <Constraint>
+                <Name NameId="BBB_VCI_ISPK">[Do tlumaczenia] Is the signature policy known?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </VCI>
+        <CV>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOF">Czy znaleziono dane odniesienia? [Is the reference data object(s) found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOI">Czy dane odniesienia są nienaruszone? [Is the reference data object(s) intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_ISI">Czy podpis jest nienaruszony? [Is the signature intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </CV>
+        <SAV>
+            <Constraint>
+                <Name NameId="BBB_SAV_ISQPSTP">[Do tlumaczenia] Is signed qualifying property: 'signing-time' present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                <Status>OK</Status>
+                <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </SAV>
+        <XCV>
+            <Constraint>
+                <Name NameId="BBB_XCV_CCCBB">[Do tlumaczenia] Can the certificate chain be built till the trust anchor?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="EAD587EB5F0C2793681D964A296BA4CB97B56651AD18813A44C06C4C59BF383D">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <SubXCV Id="EAD587EB5F0C2793681D964A296BA4CB97B56651AD18813A44C06C4C59BF383D" TrustAnchor="false">
+                <Constraint>
+                    <Name NameId="QUAL_UNIQUE_CERT">[Do tlumaczenia] Is the certificate unique ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ICSI">[Do tlumaczenia] Is the certificate's signature intact?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCGKU">[Do tlumaczenia] Has the signer's certificate given key-usage?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Key usage : nonRepudiation</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_AIA_PRES">[Do tlumaczenia] Is authority info access present?</Name>
+                    <Status>WARNING</Status>
+                    <Warning NameId="BBB_XCV_AIA_PRES_ANS">[Do tlumaczenia] Brak informacji o urzędzie certyfikacji! [Authority info access is not present!]</Warning>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_REVOC_PRES">[Do tlumaczenia] Is revocation info access present?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCR">[Do tlumaczenia] Is the certificate not revoked?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCOH">[Do tlumaczenia] Is the certificate on hold?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ICTIVRSC">[Do tlumaczenia] Is the current time in the validity range of the signer's certificate?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Certificate validity : 2016-08-24 16:47 to 2018-08-24 16:47</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_PSEUDO_USE">[Do tlumaczenia] Is pseudo used ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_RFC">[Do tlumaczenia] Is the revocation freshness check concluant ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+                <RFC>
+                    <Constraint>
+                        <Name NameId="BBB_XCV_IRDPFC">[Do tlumaczenia] Is the revocation data present for the certificate?</Name>
+                        <Status>OK</Status>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="BBB_RFC_NUP">[Do tlumaczenia] Is there a Next Update defined for the revocation data?</Name>
+                        <Status>OK</Status>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="BBB_RFC_IRIF">[Do tlumaczenia] Is the revocation information fresh for the certificate?</Name>
+                        <Status>OK</Status>
+                        <AdditionalInfo>Next update : 2017-08-18 11:48</AdditionalInfo>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                        <Status>OK</Status>
+                        <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+                    </Constraint>
+                    <Conclusion>
+                        <Indication>PASSED</Indication>
+                    </Conclusion>
+                </RFC>
+            </SubXCV>
+            <SubXCV Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B" TrustAnchor="true">
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+            </SubXCV>
+        </XCV>
+        <CertificateChain>
+            <ChainItem Id="EAD587EB5F0C2793681D964A296BA4CB97B56651AD18813A44C06C4C59BF383D">
+                <Source>SIGNATURE</Source>
+            </ChainItem>
+            <ChainItem Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B">
+                <Source>TRUSTED_LIST</Source>
+            </ChainItem>
+        </CertificateChain>
+        <Conclusion>
+            <Indication>PASSED</Indication>
+        </Conclusion>
+    </BasicBuildingBlocks>
+    <BasicBuildingBlocks Id="ID-8b009720-f82c-11e6-ae9c-0050569a5ac0" Type="SIGNATURE">
+        <FC>
+            <Constraint>
+                <Name NameId="BBB_FC_IEFF">Czy taki format jest oczekiwany? [Is the expected format found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </FC>
+        <ISC>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCI">[Do tłumaczenia] Is there an identified candidate for the signing certificate?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCS">[Do tlumaczenia] [Do tlumaczenia] Is the signing certificate signed?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISASCP">[Do tlumaczenia] Is the signed attribute: 'signing-certificate' present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISACDP">[Do tlumaczenia] Is the signed attribute: 'cert-digest' of the certificate present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ICDVV">[Do tlumaczenia] Is the certificate's digest value valid?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_AIDNASNE">[Do tlumaczenia] Are the issuer distinguished name and the serial number equal?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <CertificateChain>
+                <ChainItem Id="D30FA7D4FA90904884DDEED35B989DA84D82D742580E2625D56625C07C572FF8">
+                    <Source>SIGNATURE</Source>
+                </ChainItem>
+                <ChainItem Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86">
+                    <Source>TRUSTED_LIST</Source>
+                </ChainItem>
+            </CertificateChain>
+        </ISC>
+        <VCI>
+            <Constraint>
+                <Name NameId="BBB_VCI_ISPK">[Do tlumaczenia] Is the signature policy known?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </VCI>
+        <CV>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOF">Czy znaleziono dane odniesienia? [Is the reference data object(s) found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOI">Czy dane odniesienia są nienaruszone? [Is the reference data object(s) intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_ISI">Czy podpis jest nienaruszony? [Is the signature intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </CV>
+        <SAV>
+            <Constraint>
+                <Name NameId="BBB_SAV_ISQPSTP">[Do tlumaczenia] Is signed qualifying property: 'signing-time' present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                <Status>OK</Status>
+                <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </SAV>
+        <XCV>
+            <Constraint>
+                <Name NameId="BBB_XCV_CCCBB">[Do tlumaczenia] Can the certificate chain be built till the trust anchor?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="D30FA7D4FA90904884DDEED35B989DA84D82D742580E2625D56625C07C572FF8">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <SubXCV Id="D30FA7D4FA90904884DDEED35B989DA84D82D742580E2625D56625C07C572FF8" TrustAnchor="false">
+                <Constraint>
+                    <Name NameId="QUAL_UNIQUE_CERT">[Do tlumaczenia] Is the certificate unique ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ICSI">[Do tlumaczenia] Is the certificate's signature intact?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCGKU">[Do tlumaczenia] Has the signer's certificate given key-usage?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Key usage : nonRepudiation</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_AIA_PRES">[Do tlumaczenia] Is authority info access present?</Name>
+                    <Status>WARNING</Status>
+                    <Warning NameId="BBB_XCV_AIA_PRES_ANS">[Do tlumaczenia] Brak informacji o urzędzie certyfikacji! [Authority info access is not present!]</Warning>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_REVOC_PRES">[Do tlumaczenia] Is revocation info access present?</Name>
+                    <Status>WARNING</Status>
+                    <Warning NameId="BBB_XCV_REVOC_PRES_ANS">[Do tlumaczenia] Revocation info access is not present!</Warning>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCR">[Do tlumaczenia] Is the certificate not revoked?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCOH">[Do tlumaczenia] Is the certificate on hold?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ICTIVRSC">[Do tlumaczenia] Is the current time in the validity range of the signer's certificate?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Certificate validity : 2015-11-04 00:00 to 2017-11-03 00:00</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_PSEUDO_USE">[Do tlumaczenia] Is pseudo used ?</Name>
+                    <Status>INFORMATION</Status>
+                    <Info NameId="BBB_XCV_PSEUDO_USE_ANS">[Do tlumaczenia] A pseudonym is used</Info>
+                    <AdditionalInfo>Pseudo : mikala</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_RFC">[Do tlumaczenia] Is the revocation freshness check concluant ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+                <RFC>
+                    <Constraint>
+                        <Name NameId="BBB_XCV_IRDPFC">[Do tlumaczenia] Is the revocation data present for the certificate?</Name>
+                        <Status>OK</Status>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="BBB_RFC_NUP">[Do tlumaczenia] Is there a Next Update defined for the revocation data?</Name>
+                        <Status>OK</Status>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="BBB_RFC_IRIF">[Do tlumaczenia] Is the revocation information fresh for the certificate?</Name>
+                        <Status>OK</Status>
+                        <AdditionalInfo>Next update : 2017-08-16 19:32</AdditionalInfo>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                        <Status>OK</Status>
+                        <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+                    </Constraint>
+                    <Conclusion>
+                        <Indication>PASSED</Indication>
+                    </Conclusion>
+                </RFC>
+            </SubXCV>
+            <SubXCV Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86" TrustAnchor="true">
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+            </SubXCV>
+        </XCV>
+        <CertificateChain>
+            <ChainItem Id="D30FA7D4FA90904884DDEED35B989DA84D82D742580E2625D56625C07C572FF8">
+                <Source>SIGNATURE</Source>
+            </ChainItem>
+            <ChainItem Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86">
+                <Source>TRUSTED_LIST</Source>
+            </ChainItem>
+        </CertificateChain>
+        <Conclusion>
+            <Indication>PASSED</Indication>
+        </Conclusion>
+    </BasicBuildingBlocks>
+    <BasicBuildingBlocks Id="d30fa7d4fa90904884ddeed35b989da84d82d742580e2625d56625c07c572ff8bdce6342e059ef41175ea3281d8dd27f4c17ede5010fb59092d0292a6bed7ccc" Type="REVOCATION">
+        <ISC>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCI">[Do tłumaczenia] Is there an identified candidate for the signing certificate?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <CertificateChain>
+                <ChainItem Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86">
+                    <Source>TRUSTED_LIST</Source>
+                </ChainItem>
+            </CertificateChain>
+        </ISC>
+        <CV>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOF">Czy znaleziono dane odniesienia? [Is the reference data object(s) found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOI">Czy dane odniesienia są nienaruszone? [Is the reference data object(s) intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_ISI">Czy podpis jest nienaruszony? [Is the signature intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </CV>
+        <SAV>
+            <Constraint>
+                <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                <Status>OK</Status>
+                <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </SAV>
+        <XCV>
+            <Constraint>
+                <Name NameId="BBB_XCV_CCCBB">[Do tlumaczenia] Can the certificate chain be built till the trust anchor?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <SubXCV Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86" TrustAnchor="true">
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+            </SubXCV>
+        </XCV>
+        <CertificateChain>
+            <ChainItem Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86">
+                <Source>TRUSTED_LIST</Source>
+            </ChainItem>
+        </CertificateChain>
+        <Conclusion>
+            <Indication>PASSED</Indication>
+        </Conclusion>
+    </BasicBuildingBlocks>
+    <BasicBuildingBlocks Id="ID-e5b77ba0-1b6a-11e7-a15a-0050569a0676" Type="SIGNATURE">
+        <FC>
+            <Constraint>
+                <Name NameId="BBB_FC_IEFF">Czy taki format jest oczekiwany? [Is the expected format found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </FC>
+        <ISC>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCI">[Do tłumaczenia] Is there an identified candidate for the signing certificate?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCS">[Do tlumaczenia] [Do tlumaczenia] Is the signing certificate signed?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISASCP">[Do tlumaczenia] Is the signed attribute: 'signing-certificate' present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISACDP">[Do tlumaczenia] Is the signed attribute: 'cert-digest' of the certificate present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ICDVV">[Do tlumaczenia] Is the certificate's digest value valid?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_AIDNASNE">[Do tlumaczenia] Are the issuer distinguished name and the serial number equal?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <CertificateChain>
+                <ChainItem Id="D30FA7D4FA90904884DDEED35B989DA84D82D742580E2625D56625C07C572FF8">
+                    <Source>SIGNATURE</Source>
+                </ChainItem>
+                <ChainItem Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86">
+                    <Source>TRUSTED_LIST</Source>
+                </ChainItem>
+            </CertificateChain>
+        </ISC>
+        <VCI>
+            <Constraint>
+                <Name NameId="BBB_VCI_ISPK">[Do tlumaczenia] Is the signature policy known?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </VCI>
+        <CV>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOF">Czy znaleziono dane odniesienia? [Is the reference data object(s) found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOI">Czy dane odniesienia są nienaruszone? [Is the reference data object(s) intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_ISI">Czy podpis jest nienaruszony? [Is the signature intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </CV>
+        <SAV>
+            <Constraint>
+                <Name NameId="BBB_SAV_ISQPSTP">[Do tlumaczenia] Is signed qualifying property: 'signing-time' present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                <Status>OK</Status>
+                <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </SAV>
+        <XCV>
+            <Constraint>
+                <Name NameId="BBB_XCV_CCCBB">[Do tlumaczenia] Can the certificate chain be built till the trust anchor?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="D30FA7D4FA90904884DDEED35B989DA84D82D742580E2625D56625C07C572FF8">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <SubXCV Id="D30FA7D4FA90904884DDEED35B989DA84D82D742580E2625D56625C07C572FF8" TrustAnchor="false">
+                <Constraint>
+                    <Name NameId="QUAL_UNIQUE_CERT">[Do tlumaczenia] Is the certificate unique ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ICSI">[Do tlumaczenia] Is the certificate's signature intact?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCGKU">[Do tlumaczenia] Has the signer's certificate given key-usage?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Key usage : nonRepudiation</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_AIA_PRES">[Do tlumaczenia] Is authority info access present?</Name>
+                    <Status>WARNING</Status>
+                    <Warning NameId="BBB_XCV_AIA_PRES_ANS">[Do tlumaczenia] Brak informacji o urzędzie certyfikacji! [Authority info access is not present!]</Warning>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_REVOC_PRES">[Do tlumaczenia] Is revocation info access present?</Name>
+                    <Status>WARNING</Status>
+                    <Warning NameId="BBB_XCV_REVOC_PRES_ANS">[Do tlumaczenia] Revocation info access is not present!</Warning>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCR">[Do tlumaczenia] Is the certificate not revoked?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCOH">[Do tlumaczenia] Is the certificate on hold?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ICTIVRSC">[Do tlumaczenia] Is the current time in the validity range of the signer's certificate?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Certificate validity : 2015-11-04 00:00 to 2017-11-03 00:00</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_PSEUDO_USE">[Do tlumaczenia] Is pseudo used ?</Name>
+                    <Status>INFORMATION</Status>
+                    <Info NameId="BBB_XCV_PSEUDO_USE_ANS">[Do tlumaczenia] A pseudonym is used</Info>
+                    <AdditionalInfo>Pseudo : mikala</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_RFC">[Do tlumaczenia] Is the revocation freshness check concluant ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+                <RFC>
+                    <Constraint>
+                        <Name NameId="BBB_XCV_IRDPFC">[Do tlumaczenia] Is the revocation data present for the certificate?</Name>
+                        <Status>OK</Status>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="BBB_RFC_NUP">[Do tlumaczenia] Is there a Next Update defined for the revocation data?</Name>
+                        <Status>OK</Status>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="BBB_RFC_IRIF">[Do tlumaczenia] Is the revocation information fresh for the certificate?</Name>
+                        <Status>OK</Status>
+                        <AdditionalInfo>Next update : 2017-08-16 19:32</AdditionalInfo>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                        <Status>OK</Status>
+                        <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+                    </Constraint>
+                    <Conclusion>
+                        <Indication>PASSED</Indication>
+                    </Conclusion>
+                </RFC>
+            </SubXCV>
+            <SubXCV Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86" TrustAnchor="true">
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+            </SubXCV>
+        </XCV>
+        <CertificateChain>
+            <ChainItem Id="D30FA7D4FA90904884DDEED35B989DA84D82D742580E2625D56625C07C572FF8">
+                <Source>SIGNATURE</Source>
+            </ChainItem>
+            <ChainItem Id="08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86">
+                <Source>TRUSTED_LIST</Source>
+            </ChainItem>
+        </CertificateChain>
+        <Conclusion>
+            <Indication>PASSED</Indication>
+        </Conclusion>
+    </BasicBuildingBlocks>
+    <BasicBuildingBlocks Id="Signature-86c36a4a-5882-4984-848a-5febacfed192" Type="SIGNATURE">
+        <FC>
+            <Constraint>
+                <Name NameId="BBB_FC_IEFF">Czy taki format jest oczekiwany? [Is the expected format found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </FC>
+        <ISC>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCI">[Do tłumaczenia] Is there an identified candidate for the signing certificate?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCS">[Do tlumaczenia] [Do tlumaczenia] Is the signing certificate signed?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISASCP">[Do tlumaczenia] Is the signed attribute: 'signing-certificate' present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISACDP">[Do tlumaczenia] Is the signed attribute: 'cert-digest' of the certificate present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_ICDVV">[Do tlumaczenia] Is the certificate's digest value valid?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_ICS_AIDNASNE">[Do tlumaczenia] Are the issuer distinguished name and the serial number equal?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <CertificateChain>
+                <ChainItem Id="EAD587EB5F0C2793681D964A296BA4CB97B56651AD18813A44C06C4C59BF383D">
+                    <Source>SIGNATURE</Source>
+                </ChainItem>
+                <ChainItem Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B">
+                    <Source>TRUSTED_LIST</Source>
+                </ChainItem>
+            </CertificateChain>
+        </ISC>
+        <VCI>
+            <Constraint>
+                <Name NameId="BBB_VCI_ISPK">[Do tlumaczenia] Is the signature policy known?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </VCI>
+        <CV>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOF">Czy znaleziono dane odniesienia? [Is the reference data object(s) found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOI">Czy dane odniesienia są nienaruszone? [Is the reference data object(s) intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_ISI">Czy podpis jest nienaruszony? [Is the signature intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </CV>
+        <SAV>
+            <Constraint>
+                <Name NameId="BBB_SAV_ISQPSTP">[Do tlumaczenia] Is signed qualifying property: 'signing-time' present?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                <Status>OK</Status>
+                <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </SAV>
+        <XCV>
+            <Constraint>
+                <Name NameId="BBB_XCV_CCCBB">[Do tlumaczenia] Can the certificate chain be built till the trust anchor?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="EAD587EB5F0C2793681D964A296BA4CB97B56651AD18813A44C06C4C59BF383D">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <SubXCV Id="EAD587EB5F0C2793681D964A296BA4CB97B56651AD18813A44C06C4C59BF383D" TrustAnchor="false">
+                <Constraint>
+                    <Name NameId="QUAL_UNIQUE_CERT">[Do tlumaczenia] Is the certificate unique ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ICSI">[Do tlumaczenia] Is the certificate's signature intact?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCGKU">[Do tlumaczenia] Has the signer's certificate given key-usage?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Key usage : nonRepudiation</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_AIA_PRES">[Do tlumaczenia] Is authority info access present?</Name>
+                    <Status>WARNING</Status>
+                    <Warning NameId="BBB_XCV_AIA_PRES_ANS">[Do tlumaczenia] Brak informacji o urzędzie certyfikacji! [Authority info access is not present!]</Warning>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_REVOC_PRES">[Do tlumaczenia] Is revocation info access present?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCR">[Do tlumaczenia] Is the certificate not revoked?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ISCOH">[Do tlumaczenia] Is the certificate on hold?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_ICTIVRSC">[Do tlumaczenia] Is the current time in the validity range of the signer's certificate?</Name>
+                    <Status>OK</Status>
+                    <AdditionalInfo>Certificate validity : 2016-08-24 16:47 to 2018-08-24 16:47</AdditionalInfo>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_PSEUDO_USE">[Do tlumaczenia] Is pseudo used ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Constraint>
+                    <Name NameId="BBB_XCV_RFC">[Do tlumaczenia] Is the revocation freshness check concluant ?</Name>
+                    <Status>OK</Status>
+                </Constraint>
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+                <RFC>
+                    <Constraint>
+                        <Name NameId="BBB_XCV_IRDPFC">[Do tlumaczenia] Is the revocation data present for the certificate?</Name>
+                        <Status>OK</Status>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="BBB_RFC_NUP">[Do tlumaczenia] Is there a Next Update defined for the revocation data?</Name>
+                        <Status>OK</Status>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="BBB_RFC_IRIF">[Do tlumaczenia] Is the revocation information fresh for the certificate?</Name>
+                        <Status>OK</Status>
+                        <AdditionalInfo>Next update : 2017-08-18 11:48</AdditionalInfo>
+                    </Constraint>
+                    <Constraint>
+                        <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                        <Status>OK</Status>
+                        <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+                    </Constraint>
+                    <Conclusion>
+                        <Indication>PASSED</Indication>
+                    </Conclusion>
+                </RFC>
+            </SubXCV>
+            <SubXCV Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B" TrustAnchor="true">
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+            </SubXCV>
+        </XCV>
+        <CertificateChain>
+            <ChainItem Id="EAD587EB5F0C2793681D964A296BA4CB97B56651AD18813A44C06C4C59BF383D">
+                <Source>SIGNATURE</Source>
+            </ChainItem>
+            <ChainItem Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B">
+                <Source>TRUSTED_LIST</Source>
+            </ChainItem>
+        </CertificateChain>
+        <Conclusion>
+            <Indication>PASSED</Indication>
+        </Conclusion>
+    </BasicBuildingBlocks>
+    <BasicBuildingBlocks Id="ead587eb5f0c2793681d964a296ba4cb97b56651ad18813a44c06c4c59bf383d861276ab8028b7ee2fbac3dadd6e5940f484bc252a2842d3526b6166b4aec430" Type="REVOCATION">
+        <ISC>
+            <Constraint>
+                <Name NameId="BBB_ICS_ISCI">[Do tłumaczenia] Is there an identified candidate for the signing certificate?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <CertificateChain>
+                <ChainItem Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B">
+                    <Source>TRUSTED_LIST</Source>
+                </ChainItem>
+            </CertificateChain>
+        </ISC>
+        <CV>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOF">Czy znaleziono dane odniesienia? [Is the reference data object(s) found?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_IRDOI">Czy dane odniesienia są nienaruszone? [Is the reference data object(s) intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="BBB_CV_ISI">Czy podpis jest nienaruszony? [Is the signature intact?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </CV>
+        <SAV>
+            <Constraint>
+                <Name NameId="ASCCM">[Do tlumaczenia] Are signature cryptographic constraints met?</Name>
+                <Status>OK</Status>
+                <AdditionalInfo>Validation time : 2017-08-16 14:39</AdditionalInfo>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </SAV>
+        <XCV>
+            <Constraint>
+                <Name NameId="BBB_XCV_CCCBB">[Do tlumaczenia] Can the certificate chain be built till the trust anchor?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B">
+                <Name NameId="BBB_XCV_SUB">[Do tlumaczenia] Is the certificate validation concluant ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+            <SubXCV Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B" TrustAnchor="true">
+                <Conclusion>
+                    <Indication>PASSED</Indication>
+                </Conclusion>
+            </SubXCV>
+        </XCV>
+        <CertificateChain>
+            <ChainItem Id="BF48E1A24114DF64397DB87B22BA605F3EB259BBD2F89B5473FACEE1711BBA6B">
+                <Source>TRUSTED_LIST</Source>
+            </ChainItem>
+        </CertificateChain>
+        <Conclusion>
+            <Indication>PASSED</Indication>
+        </Conclusion>
+    </BasicBuildingBlocks>
+    <QMatrixBlock>
+        <TLAnalysis CountryCode="EU">
+            <Constraint>
+                <Name NameId="QUAL_TL_FRESH">[Do tlumaczenia] Is the trusted list fresh ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_EXP">[Do tlumaczenia] Is the trusted list not expired ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_VERSION">[Do tlumaczenia] Is the trusted list has the expected version ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_WS">[Do tlumaczenia] Is the trusted list well signed ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </TLAnalysis>
+        <TLAnalysis CountryCode="PL">
+            <Constraint>
+                <Name NameId="QUAL_TL_FRESH">[Do tlumaczenia] Is the trusted list fresh ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_EXP">[Do tlumaczenia] Is the trusted list not expired ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_VERSION">[Do tlumaczenia] Is the trusted list has the expected version ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_WS">[Do tlumaczenia] Is the trusted list well signed ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </TLAnalysis>
+        <SignatureAnalysis Id="Signature-52abf6c0-67ec-40d4-b73d-08ab4f6691d0" SignatureQualification="N/A">
+            <Constraint>
+                <Name NameId="QUAL_IS_ADES">[Do tlumaczenia] Is the signature/seal an acceptable AdES (ETSI EN 319 102-1) ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TRUSTED_CERT_PATH">[Do tlumaczenia] Is the certificate path trusted?</Name>
+                <Status>NOT OK</Status>
+                <Error NameId="QUAL_TRUSTED_CERT_PATH_ANS">Ścieżka certyfikacji nie jest zaufana!</Error>
+            </Constraint>
+            <Conclusion>
+                <Indication>FAILED</Indication>
+                <Errors NameId="QUAL_TRUSTED_CERT_PATH_ANS">Ścieżka certyfikacji nie jest zaufana!</Errors>
+                <Errors NameId="QUAL_TRUSTED_CERT_PATH_ANS">Ścieżka certyfikacji nie jest zaufana!</Errors>
+            </Conclusion>
+        </SignatureAnalysis>
+        <SignatureAnalysis Id="ID-8b009720-f82c-11e6-ae9c-0050569a5ac0" SignatureQualification="QESig">
+            <Constraint>
+                <Name NameId="QUAL_IS_ADES">[Do tlumaczenia] Is the signature/seal an acceptable AdES (ETSI EN 319 102-1) ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TRUSTED_CERT_PATH">[Do tlumaczenia] Is the certificate path trusted?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="EU">
+                <Name NameId="QUAL_TRUSTED_LIST_ACCEPT">[Do tlumaczenia] Is the trusted list acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="PL">
+                <Name NameId="QUAL_TRUSTED_LIST_ACCEPT">[Do tlumaczenia] Is the trusted list acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_SERV_CONS">[Do tlumaczenia] Are trust services consistent ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_CERT_CONS">[Do tlumaczenia] Is the certificate consistent with the trusted list ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_QC_AT_ST">[Do tlumaczenia] Is the certificate qualifed at signing time?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_FOR_SIGN_AT_ST">[Do tlumaczenia] Is the certificate for eSig at signing time?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_QC_AT_CC">Czy certyfikat był kwalifikowany w czasie wystawiania? [Is the certificate qualifed at issuance time?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_QSCD_AT_ST">[Do tlumaczenia] Is the signature/seal created by a QSCD?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </SignatureAnalysis>
+        <SignatureAnalysis Id="Signature-86c36a4a-5882-4984-848a-5febacfed192" SignatureQualification="N/A">
+            <Constraint>
+                <Name NameId="QUAL_IS_ADES">[Do tlumaczenia] Is the signature/seal an acceptable AdES (ETSI EN 319 102-1) ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TRUSTED_CERT_PATH">[Do tlumaczenia] Is the certificate path trusted?</Name>
+                <Status>NOT OK</Status>
+                <Error NameId="QUAL_TRUSTED_CERT_PATH_ANS">Ścieżka certyfikacji nie jest zaufana!</Error>
+            </Constraint>
+            <Conclusion>
+                <Indication>FAILED</Indication>
+                <Errors NameId="QUAL_TRUSTED_CERT_PATH_ANS">Ścieżka certyfikacji nie jest zaufana!</Errors>
+                <Errors NameId="QUAL_TRUSTED_CERT_PATH_ANS">Ścieżka certyfikacji nie jest zaufana!</Errors>
+            </Conclusion>
+        </SignatureAnalysis>
+        <SignatureAnalysis Id="ID-e5b77ba0-1b6a-11e7-a15a-0050569a0676" SignatureQualification="QESig">
+            <Constraint>
+                <Name NameId="QUAL_IS_ADES">[Do tlumaczenia] Is the signature/seal an acceptable AdES (ETSI EN 319 102-1) ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TRUSTED_CERT_PATH">[Do tlumaczenia] Is the certificate path trusted?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="EU">
+                <Name NameId="QUAL_TRUSTED_LIST_ACCEPT">[Do tlumaczenia] Is the trusted list acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint Id="PL">
+                <Name NameId="QUAL_TRUSTED_LIST_ACCEPT">[Do tlumaczenia] Is the trusted list acceptable?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_SERV_CONS">[Do tlumaczenia] Are trust services consistent ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_TL_CERT_CONS">[Do tlumaczenia] Is the certificate consistent with the trusted list ?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_QC_AT_ST">[Do tlumaczenia] Is the certificate qualifed at signing time?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_FOR_SIGN_AT_ST">[Do tlumaczenia] Is the certificate for eSig at signing time?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_QC_AT_CC">Czy certyfikat był kwalifikowany w czasie wystawiania? [Is the certificate qualifed at issuance time?]</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Constraint>
+                <Name NameId="QUAL_QSCD_AT_ST">[Do tlumaczenia] Is the signature/seal created by a QSCD?</Name>
+                <Status>OK</Status>
+            </Constraint>
+            <Conclusion>
+                <Indication>PASSED</Indication>
+            </Conclusion>
+        </SignatureAnalysis>
+    </QMatrixBlock>
+</DetailedReport>

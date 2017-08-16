@@ -39,7 +39,7 @@ public class XmlElementSignatureScope extends SignatureScope {
 	@Override
 	public String getDescription() {
 
-		String description = "The XML element with ID '" + getName() + "'";
+		String description = getDssLocale().getLocalizedMessage("XML_ELEMENT_WITH_ID", getName());
 		if (transformations.isEmpty()) {
 			return description;
 		} else {
@@ -50,7 +50,7 @@ public class XmlElementSignatureScope extends SignatureScope {
 	protected String addTransformationDescription(final String description) {
 
 		StringBuilder result = new StringBuilder();
-		result.append(description).append(" with transformations: ");
+		result.append(description).append(" ").append(getDssLocale().getLocalizedMessage("WITH_TRANSFORMATIONS")).append(" ");
 		for (final String transformation : transformations) {
 			result.append(transformation).append("; ");
 		}

@@ -187,7 +187,7 @@ public class ValidationTimeSliding extends Chain<XmlVTS> {
 	private boolean isFresh(RevocationWrapper revocationData, Date controlTime) {
 		// TODO SubContext ??
 		RevocationFreshnessChecker rfc = new RevocationFreshnessChecker(revocationData, controlTime, context, SubContext.SIGNING_CERT, policy);
-		XmlRFC execute = rfc.execute();
+		XmlRFC execute = rfc.execute(getDssLocale());
 		return execute != null && execute.getConclusion() != null && Indication.PASSED.equals(execute.getConclusion().getIndication());
 	}
 

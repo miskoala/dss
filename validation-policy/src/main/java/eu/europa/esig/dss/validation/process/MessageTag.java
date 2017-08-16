@@ -20,8 +20,6 @@
  */
 package eu.europa.esig.dss.validation.process;
 
-import eu.europa.esig.dss.validation.I18n;
-
 public enum MessageTag {
 
 	/* BBB -> FC */
@@ -304,17 +302,4 @@ public enum MessageTag {
 	
 	EMPTY;
 
-	/**
-	 * This method return the message associated with the tag.
-	 *
-	 * @return {@code String} message.
-	 */
-	public String getMessage() {
-		return I18n.getMessage(this.name());
-	}
-
-	@Override
-	public String toString() {
-		return I18n.getMessage(this.name());
-	}
 }
