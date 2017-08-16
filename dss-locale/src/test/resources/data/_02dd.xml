@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <DiagnosticData xmlns="http://dss.esig.europa.eu/validation/diagnostic">
     <DocumentName>ogolne-signed-xades-baseline-b.xml</DocumentName>
-    <ValidationDate>2017-08-03T12:29:39</ValidationDate>
+    <ValidationDate>2017-08-16T12:39:14</ValidationDate>
     <Signatures>
         <Signature Id="id-ffcd68ceb751794040d9c125e6153323">
             <SignatureFilename>ogolne-signed-xades-baseline-b.xml</SignatureFilename>
@@ -38,7 +38,7 @@
             <ClaimedRoles/>
             <Timestamps/>
             <SignatureScopes>
-                <SignatureScope name="o-id-1" scope="XmlElementSignatureScope">The XML element with ID 'o-id-1'</SignatureScope>
+                <SignatureScope name="o-id-1" scope="XmlElementSignatureScope">[default]The XML element with ID ?</SignatureScope>
             </SignatureScopes>
         </Signature>
     </Signatures>
@@ -130,15 +130,15 @@
                 </TrustedServiceProvider>
             </TrustedServiceProviders>
             <Revocations>
-                <Revocation Id="d30fa7d4fa90904884ddeed35b989da84d82d742580e2625d56625c07c572ff88b3f854ed642eb1527fcb1d82bdc7beac8918b84cc0de64294fc97a75186b414">
+                <Revocation Id="d30fa7d4fa90904884ddeed35b989da84d82d742580e2625d56625c07c572ff8bdce6342e059ef41175ea3281d8dd27f4c17ede5010fb59092d0292a6bed7ccc">
                     <Origin>EXTERNAL</Origin>
                     <Source>CRLToken</Source>
                     <SourceAddress>http://193.178.164.4/repozytorium/ca1_2015.crl</SourceAddress>
                     <Available>true</Available>
                     <Status>true</Status>
-                    <ProductionDate>2017-08-03T09:40:16</ProductionDate>
-                    <ThisUpdate>2017-08-03T09:40:16</ThisUpdate>
-                    <NextUpdate>2017-08-03T21:40:16</NextUpdate>
+                    <ProductionDate>2017-08-16T05:32:50</ProductionDate>
+                    <ThisUpdate>2017-08-16T05:32:50</ThisUpdate>
+                    <NextUpdate>2017-08-16T17:32:50</NextUpdate>
                     <DigestAlgoAndValues/>
                     <BasicSignature>
                         <EncryptionAlgoUsedToSignThisToken>RSA</EncryptionAlgoUsedToSignThisToken>
@@ -182,8 +182,8 @@
             <PublicKeySize>2048</PublicKeySize>
             <PublicKeyEncryptionAlgo>RSA</PublicKeyEncryptionAlgo>
             <KeyUsageBits>
-                <KeyUsage>keyCertSign</KeyUsage>
                 <KeyUsage>crlSign</KeyUsage>
+                <KeyUsage>keyCertSign</KeyUsage>
             </KeyUsageBits>
             <IdKpOCSPSigning>false</IdKpOCSPSigning>
             <IdPkixOcspNoCheck>false</IdPkixOcspNoCheck>
@@ -239,11 +239,11 @@
         <TrustedList>
             <CountryCode>PL</CountryCode>
             <Url>https://www.nccert.pl/tsl/PL_TSL.xml</Url>
-            <SequenceNumber>87</SequenceNumber>
+            <SequenceNumber>88</SequenceNumber>
             <Version>5</Version>
-            <LastLoading>2017-08-03T12:29:34</LastLoading>
-            <IssueDate>2017-07-27T01:00:00</IssueDate>
-            <NextUpdate>2018-01-27T00:00:00</NextUpdate>
+            <LastLoading>2017-08-16T12:39:09</LastLoading>
+            <IssueDate>2017-08-04T01:00:00</IssueDate>
+            <NextUpdate>2017-11-04T00:00:00</NextUpdate>
             <WellSigned>true</WellSigned>
         </TrustedList>
     </TrustedLists>
@@ -252,7 +252,7 @@
         <Url>https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml</Url>
         <SequenceNumber>179</SequenceNumber>
         <Version>5</Version>
-        <LastLoading>2017-08-03T12:29:32</LastLoading>
+        <LastLoading>2017-08-16T12:39:07</LastLoading>
         <IssueDate>2017-08-01T04:00:00</IssueDate>
         <NextUpdate>2018-01-31T00:00:00</NextUpdate>
         <WellSigned>true</WellSigned>

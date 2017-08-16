@@ -7,7 +7,7 @@
 		signer's certificate and certificates used to validate certificate validity status services - CRLs, OCSP, and time-stamps).
 	</PolicyDescription>
     </Policy>
-    <ValidationTime>2017-08-03T12:29:39</ValidationTime>
+    <ValidationTime>2017-08-16T12:39:14</ValidationTime>
     <DocumentName>ogolne-signed-xades-baseline-b.xml</DocumentName>
     <ValidSignaturesCount>1</ValidSignaturesCount>
     <SignaturesCount>1</SignaturesCount>
@@ -29,6 +29,6 @@
         <Warnings>Authority info access is not present!</Warnings>
         <Warnings>Revocation info access is not present!</Warnings>
         <Infos>A pseudonym is used</Infos>
-        <SignatureScope name="o-id-1" scope="XmlElementSignatureScope">The XML element with ID 'o-id-1'</SignatureScope>
+        <SignatureScope name="o-id-1" scope="XmlElementSignatureScope">[default]The XML element with ID ?</SignatureScope>
     </Signature>
 </SimpleReport>
