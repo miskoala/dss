@@ -1,4 +1,4 @@
-package eu.europa.esig.dss.locale;
+package eu.europa.esig.dss.locale.tests;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -7,6 +7,8 @@ import java.util.Locale;
 import java.util.MissingResourceException;
 
 import org.junit.Test;
+
+import eu.europa.esig.dss.locale.DSSLocale;
 
 public class DSSLocaleTest {
 	

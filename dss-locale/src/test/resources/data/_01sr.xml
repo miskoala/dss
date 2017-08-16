@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SimpleReport xmlns="http://dss.esig.europa.eu/validation/simple-report">
+    <Policy>
+        <PolicyName>QES AdESQC TL based</PolicyName>
+        <PolicyDescription>Validate electronic signatures and indicates whether they are Advanced electronic Signatures (AdES), AdES supported by a Qualified Certificate (AdES/QC) or a
+		Qualified electronic Signature (QES). All certificates and their related chains supporting the signatures are validated against the EU Member State Trusted Lists (this includes
+		signer's certificate and certificates used to validate certificate validity status services - CRLs, OCSP, and time-stamps).
+	</PolicyDescription>
+    </Policy>
+    <ValidationTime>2017-08-03T12:29:38</ValidationTime>
+    <DocumentName></DocumentName>
+    <ValidSignaturesCount>1</ValidSignaturesCount>
+    <SignaturesCount>1</SignaturesCount>
+    <Signature Id="id-a92e5acfb95ca08be0c6312544210d4f" SignatureFormat="XAdES-BASELINE-B">
+        <SigningTime>2017-08-01T09:25:47</SigningTime>
+        <SignedBy>mikala</SignedBy>
+        <CertificateChain>
+            <Certificate>
+                <id>D30FA7D4FA90904884DDEED35B989DA84D82D742580E2625D56625C07C572FF8</id>
+                <qualifiedName>mikala</qualifiedName>
+            </Certificate>
+            <Certificate>
+                <id>08DA906198FCD5C6A242B2A6BFFF0B5A445655D76BBC65BFCBDD13186C2C6A86</id>
+                <qualifiedName>PWPW - kwalifikowany CA</qualifiedName>
+            </Certificate>
+        </CertificateChain>
+        <SignatureLevel description="Qualified Electronic Signature">QESig</SignatureLevel>
+        <Indication>TOTAL_PASSED</Indication>
+        <Warnings>Authority info access is not present!</Warnings>
+        <Warnings>Revocation info access is not present!</Warnings>
+        <Infos>A pseudonym is used</Infos>
+        <SignatureScope name="o-id-1" scope="XmlElementSignatureScope">The XML element with ID 'o-id-1'</SignatureScope>
+    </Signature>
+</SimpleReport>

@@ -19,7 +19,7 @@ public class DSSLocale {
 
 	private ResourceBundle resourceBundle;
 
-	private String resourceNamePrefix = "validationPolicyMessages";
+	private String resourceNamePrefix = "i18n";
 
 	public DSSLocale() {
 		init(DEFAULT);
@@ -83,4 +83,12 @@ public class DSSLocale {
 		}
 		return defaultDSSLocale;
 	}
+	public Locale getLocale() {
+		return resourceBundle.getLocale();
+	}
+
+	public ResourceBundle getResourceBundle() {
+		return resourceBundle;
+	}
+	
 }

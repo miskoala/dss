@@ -1,4 +1,4 @@
-package eu.europa.esig.dss.locale.tools;
+package eu.europa.esig.dss.locale.tests;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,7 +8,7 @@ import java.util.Set;
 public class TranslationsTools {
 	public static void main(String[] args) throws IOException {
 		TranslationsTools tt = new TranslationsTools();
-		tt.showNotTranslated("/validationPolicyMessages", "pl");
+		tt.showNotTranslated("/i18n", "pl");
 		//tt.showNotTranslated("/locale/testPolicyMessages", "pl");
 	}
 	public void showNotTranslated(String resourceNamePrefix, String lang) throws IOException {
