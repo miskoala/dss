@@ -1,6 +1,6 @@
 package eu.europa.esig.dss.locale.tests;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -43,7 +43,10 @@ public class DssJasperReportTest {
 		String testText = new PDFTextStripper().getText(pdfDoc);
 		pdfDoc.close();
 		pdf.close();
+
 		assertTrue(testText.contains("Test - Raport walidacji podpisanego dokumentu"));
+		assertTrue(testText.contains("Ścieżka certyfikacji:"));
+		//assertTrue(testText.contains("Ścieżka to jest path"));
 		 
 	}
 
@@ -67,6 +70,7 @@ public class DssJasperReportTest {
 		pdfDoc.close();
 		pdf.close();
 		assertTrue(testText.contains("[en] Test - Signed Document Validation Simple Report"));
+		assertTrue(testText.contains("[en] Signature format:"));
 
 	}
 	
@@ -90,6 +94,7 @@ public class DssJasperReportTest {
 		pdfDoc.close();
 		pdf.close();
 		assertTrue(testText.contains("[def] Test - Signed Document Validation Simple Report"));
+		assertTrue(testText.contains("[def] Certificate chain:"));
 	}
 	@Test
 	public void simpleReportToPdfTest() throws JRException, IOException {
