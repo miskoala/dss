@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sr" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" resourceBundle="report" whenResourceMissingType="Key" uuid="3d38a528-3ee3-43ef-aa29-7b5367cb3bcd">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="datasources\DSS Simple report.xml"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src/test/resources/data/DSS Simple report.xml"/>
 	<style name="error" mode="Opaque" forecolor="#FF0400"/>
 	<subDataset name="Errors" whenResourceMissingType="Empty" uuid="4fdeab41-9521-4d97-8cbe-9e975901801b">
-		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="datasources\DSS Simple report.xml"/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src/test/resources/data/DSS Simple report.xml"/>
 		<parameter name="XML_DATA_DOCUMENT" class="org.w3c.dom.Document" isForPrompting="false"/>
 		<parameter name="XML_INPUT_STREAM" class="java.io.InputStream" isForPrompting="false"/>
 		<parameter name="XML_FILE" class="java.io.File" isForPrompting="false"/>
@@ -28,7 +28,7 @@
 		<filterExpression><![CDATA[$F{SignatureId}.equals($P{SigId})]]></filterExpression>
 	</subDataset>
 	<subDataset name="Warnings" whenResourceMissingType="Empty" uuid="53c99bef-a932-4763-801a-a30c9b9d66c0">
-		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="datasources\DSS Simple report.xml"/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src/test/resources/data/DSS Simple report.xml"/>
 		<parameter name="SigId" class="java.lang.String" evaluationTime="Early">
 			<parameterDescription><![CDATA[]]></parameterDescription>
 		</parameter>
@@ -52,7 +52,7 @@
 		<filterExpression><![CDATA[$F{SignatureId}.equals($P{SigId})]]></filterExpression>
 	</subDataset>
 	<subDataset name="Infos" whenResourceMissingType="Empty" uuid="e427b497-c7e7-427b-81f0-0c5fe3a5e464">
-		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="datasources\DSS Simple report.xml"/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src/test/resources/data/DSS Simple report.xml"/>
 		<parameter name="sigId" class="java.lang.String" evaluationTime="Early">
 			<parameterDescription><![CDATA[]]></parameterDescription>
 		</parameter>
@@ -68,7 +68,7 @@
 		<filterExpression><![CDATA[$F{sigId}.equals($P{sigId})]]></filterExpression>
 	</subDataset>
 	<subDataset name="Chain" uuid="73e7c57a-4882-4033-b850-f27d6affdf81">
-		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="datasources\DSS Simple report.xml"/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src/test/resources/data/DSS Simple report.xml"/>
 		<parameter name="sigId" class="java.lang.String"/>
 		<queryString language="xPath">
 			<![CDATA[/SimpleReport/Signature/CertificateChain/Certificate]]>
@@ -454,7 +454,9 @@
 								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 							</reportElement>
 							<box leftPadding="6"/>
-							<textElement verticalAlignment="Middle"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
 							<textFieldExpression><![CDATA[$F{Warning}]]></textFieldExpression>
 						</textField>
 					</jr:listContents>
@@ -501,7 +503,9 @@
 								<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 							</reportElement>
 							<box leftPadding="6"/>
-							<textElement verticalAlignment="Middle"/>
+							<textElement verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
 							<textFieldExpression><![CDATA[$F{Infos}]]></textFieldExpression>
 						</textField>
 					</jr:listContents>
