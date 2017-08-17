@@ -4,9 +4,9 @@
 	xmlns:fo="http://www.w3.org/1999/XSL/Format"
 	xmlns:dss="http://dss.esig.europa.eu/validation/simple-report">
 	<xsl:output method="xml" indent="yes" />
-
 	<xsl:template match="/dss:SimpleReport">
 		<fo:root>
+			<xsl:attribute name="font-family">DejaVuSans</xsl:attribute>
 			<fo:layout-master-set>
 				<fo:simple-page-master>
 					<xsl:attribute name="master-name">A4-portrait</xsl:attribute>
@@ -16,7 +16,6 @@
 					<xsl:attribute name="margin-bottom">1cm</xsl:attribute>
 					<xsl:attribute name="margin-right">2.5cm</xsl:attribute>
 					<xsl:attribute name="margin-left">2.5cm</xsl:attribute>
-			
 					<fo:region-body>
 						<xsl:attribute name="margin-top">1cm</xsl:attribute>
 						<xsl:attribute name="margin-bottom">2cm</xsl:attribute>
@@ -56,11 +55,13 @@
 					<xsl:attribute name="flow-name">page-footer</xsl:attribute>
 					<xsl:attribute name="font-size">8pt</xsl:attribute>
 					
+					
 					<fo:block>
 						<xsl:attribute name="color">grey</xsl:attribute>
 						<xsl:attribute name="border-top-style">solid</xsl:attribute>
 						<xsl:attribute name="border-top-color">grey</xsl:attribute>
 						<xsl:attribute name="text-align-last">justify</xsl:attribute>
+						
 					
 						<fo:inline>
 							 <fo:basic-link>

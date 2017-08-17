@@ -19,6 +19,7 @@ import eu.europa.esig.dss.locale.tests.utils.FOPService;
 public class DSSLocaleTest {
 	
 	private Object mutex= new Object();
+
 	
 	@Test
 	public void defaultFopSimpleTest() throws Exception {
@@ -46,6 +47,15 @@ public class DSSLocaleTest {
 		fs.generateSimpleReport(result, new FileOutputStream("target/fopSimple_en.pdf"));
 	}
 	
+	@Test
+	public void plFopDetailedTest() throws Exception {
+		DSSLocale locale = new DSSLocale("pl");
+		FOPService fs = new FOPService(locale);
+		InputStream dataIs = DSSLocaleTest.class.getResourceAsStream("/data/_03dr.xml");
+		String result = IOUtils.toString(dataIs, "UTF-8");
+		fs.generateDetailedReport(result, new FileOutputStream("target/fopDetailed_pl.pdf"));
+	}
+
 	
 	@Test
 	public void defaultLocaleExistingKeyTest() {

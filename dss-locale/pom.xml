@@ -30,7 +30,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>src/main/resources/xslt/default</outputDirectory>
+							<outputDirectory>target/classes/xslt/default</outputDirectory>
 							<filters>
 								<filter>src/main/resources/report.properties</filter>
 							</filters>
@@ -49,7 +49,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>src/main/resources/xslt/pl</outputDirectory>
+							<outputDirectory>target/classes/xslt/pl</outputDirectory>
 							<filters>
 								<filter>src/main/resources/report_pl.properties</filter>
 							</filters>
@@ -68,7 +68,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>src/main/resources/xslt/en</outputDirectory>
+							<outputDirectory>target/classes/xslt/en</outputDirectory>
 							<filters>
 								<filter>src/main/resources/report_en.properties</filter>
 							</filters>

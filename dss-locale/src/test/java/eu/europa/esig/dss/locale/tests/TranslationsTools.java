@@ -5,6 +5,8 @@ import java.io.InputStream;
 import java.util.Properties;
 import java.util.Set;
 
+import org.apache.fop.fonts.apps.TTFReader;
+
 public class TranslationsTools {
 	public static void main(String[] args) throws IOException {
 		TranslationsTools tt = new TranslationsTools();
@@ -12,6 +14,8 @@ public class TranslationsTools {
 		//tt.showNotTranslated("/locale/testPolicyMessages", "pl");
 	}
 	public void showNotTranslated(String resourceNamePrefix, String lang) throws IOException {
+		
+		
 		
 		InputStream isD = TranslationsTools.class.getResourceAsStream(resourceNamePrefix+".properties");
 		Properties propD= new Properties();
