@@ -1,5 +1,6 @@
 package eu.europa.esig.dss.locale;
 
+import java.io.InputStream;
 import java.text.MessageFormat;
 import java.util.Collections;
 import java.util.List;
@@ -21,6 +22,8 @@ public class DSSLocale {
 
 	private String resourceNamePrefix = "i18n";
 
+	private String lang;
+
 	public DSSLocale() {
 		init(DEFAULT);
 	}
@@ -35,6 +38,7 @@ public class DSSLocale {
 	}
 
 	private void init(String lang) {
+		this.lang = lang;
 		if (DEFAULT.equals(lang)) {
 			resourceBundle = ResourceBundle.getBundle(resourceNamePrefix, Locale.ROOT, new ResourceBundle.Control() {
 				@Override
@@ -83,6 +87,7 @@ public class DSSLocale {
 		}
 		return defaultDSSLocale;
 	}
+
 	public Locale getLocale() {
 		return resourceBundle.getLocale();
 	}
@@ -90,5 +95,21 @@ public class DSSLocale {
 	public ResourceBundle getResourceBundle() {
 		return resourceBundle;
 	}
-	
+
+	public InputStream getXsltSimpleReportHtml() {
+		return DSSLocale.class.getResourceAsStream("/xslt/" + lang + "/html/simple-report.xslt");
+	}
+
+	public InputStream getXsltSimpleReportPdf() {
+		return DSSLocale.class.getResourceAsStream("/xslt/" + lang + "/pdf/simple-report.xslt");
+	}
+
+	public InputStream getXsltDetailedReportHtml() {
+		return DSSLocale.class.getResourceAsStream("/xslt/" + lang + "/html/detailed-report.xslt");
+	}
+
+	public InputStream getXsltDetailedReportPdf() {
+		return DSSLocale.class.getResourceAsStream("/xslt/" + lang + "/pdf/detailed-report.xslt");
+	}
+
 }
