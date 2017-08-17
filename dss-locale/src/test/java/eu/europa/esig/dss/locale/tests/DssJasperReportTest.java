@@ -2,14 +2,11 @@ package eu.europa.esig.dss.locale.tests;
 
 import static org.junit.Assert.*;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.pdfbox.io.RandomAccessBufferedFileInputStream;
-import org.apache.pdfbox.io.RandomAccessFile;
 import org.apache.pdfbox.io.RandomAccessRead;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -44,8 +41,8 @@ public class DssJasperReportTest {
 		pdfDoc.close();
 		pdf.close();
 
-		assertTrue(testText.contains("Test - Raport walidacji podpisanego dokumentu"));
-		assertTrue(testText.contains("Ścieżka certyfikacji:"));
+		assertTrue(testText.contains("[pl] Raport walidacji podpisanego dokumentu"));
+		assertTrue(testText.contains("[pl] Format podpisu:"));
 		//assertTrue(testText.contains("Ścieżka to jest path"));
 		 
 	}
@@ -69,7 +66,7 @@ public class DssJasperReportTest {
 		String testText = new PDFTextStripper().getText(pdfDoc);
 		pdfDoc.close();
 		pdf.close();
-		assertTrue(testText.contains("[en] Test - Signed Document Validation Simple Report"));
+		assertTrue(testText.contains("[en] Signed Document Validation Simple Report"));
 		assertTrue(testText.contains("[en] Signature format:"));
 
 	}
@@ -93,7 +90,7 @@ public class DssJasperReportTest {
 		String testText = new PDFTextStripper().getText(pdfDoc);
 		pdfDoc.close();
 		pdf.close();
-		assertTrue(testText.contains("[def] Test - Signed Document Validation Simple Report"));
+		assertTrue(testText.contains("[def] Signed Document Validation Simple Report"));
 		assertTrue(testText.contains("[def] Certificate chain:"));
 	}
 	@Test

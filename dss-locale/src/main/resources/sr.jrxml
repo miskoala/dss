@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sr" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" resourceBundle="report" whenResourceMissingType="Key" uuid="3d38a528-3ee3-43ef-aa29-7b5367cb3bcd">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src/test/resources/data/DSS Simple report.xml"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src\test\resources\data\DSS Simple report.xml"/>
 	<style name="error" mode="Opaque" forecolor="#FF0400"/>
 	<subDataset name="Errors" whenResourceMissingType="Empty" uuid="4fdeab41-9521-4d97-8cbe-9e975901801b">
 		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src/test/resources/data/DSS Simple report.xml"/>
@@ -150,8 +150,8 @@
 		<fieldDescription><![CDATA[SignatureScope/@scope]]></fieldDescription>
 	</field>
 	<variable name="SignatureStatus" class="java.lang.String" incrementType="Column">
-		<variableExpression><![CDATA[new String($F{ValidSignaturesCount}+" "+$R{valid signatures, out of}+" "+$F{SignaturesCount})]]></variableExpression>
-		<initialValueExpression><![CDATA[new String($F{ValidSignaturesCount}+" "+$R{valid signatures, out of}+" "+$F{SignaturesCount})]]></initialValueExpression>
+		<variableExpression><![CDATA[new String($F{ValidSignaturesCount}+" "+$R{text.valid.signatures.out.of}+" "+$F{SignaturesCount})]]></variableExpression>
+		<initialValueExpression><![CDATA[new String($F{ValidSignaturesCount}+" "+$R{text.valid.signatures.out.of}+" "+$F{SignaturesCount})]]></initialValueExpression>
 	</variable>
 	<variable name="PolicyDescription" class="java.lang.String">
 		<initialValueExpression><![CDATA[$F{PolicyDescription}.replaceAll( "\n", "" ).replaceAll( "\t", "" )]]></initialValueExpression>
@@ -230,7 +230,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Policy}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.policy}+":"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement key="" positionType="Float" mode="Opaque" x="0" y="128" width="554" height="30" forecolor="#000000" backcolor="#74B8FC" uuid="98fbb670-7d8e-4c02-a735-7560273228a7"/>
@@ -243,7 +243,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Document informations}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.document.informations}+":"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="158" width="120" height="20" uuid="5c488177-a464-4c53-8dfb-996f3930a9c6"/>
@@ -251,7 +251,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Name}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.name}+":"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="178" width="120" height="20" uuid="3d9be4ce-226e-4393-8146-2f5306dd08b9"/>
@@ -259,7 +259,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Validation time}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.validation.time}+":"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="198" width="120" height="20" uuid="a5f78947-24e5-4199-bd91-5d95d9773fe1"/>
@@ -267,7 +267,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Signatures status}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.signatures.status}+":"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement key="" mode="Opaque" x="1" y="0" width="553" height="30" forecolor="#000000" backcolor="#DBDBDB" uuid="a643ba0a-b7c9-4f1c-ab86-0ebe3712b2d3"/>
@@ -280,7 +280,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Signed Document Validation Report}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.signed.document.validation.report}]]></textFieldExpression>
 			</textField>
 		</band>
 	</title>
@@ -553,7 +553,7 @@
 					<textElement verticalAlignment="Middle">
 						<font fontName="DejaVu Sans"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$R{Signature format}+":"]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$R{text.signature.format}+":"]]></textFieldExpression>
 				</textField>
 			</frame>
 			<frame>
@@ -564,7 +564,7 @@
 					<textElement verticalAlignment="Middle">
 						<font fontName="DejaVu Sans"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$R{Signed by}+":"]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$R{text.signed.by}+":"]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement positionType="FixRelativeToBottom" x="120" y="0" width="434" height="20" uuid="5545c7e6-79fe-492d-89f9-69e4fc0209b1">
@@ -585,7 +585,7 @@
 					<textElement verticalAlignment="Middle">
 						<font fontName="DejaVu Sans"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$R{Certificate chain} + ":"]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$R{text.certificate.chain} + ":"]]></textFieldExpression>
 				</textField>
 				<componentElement>
 					<reportElement positionType="Float" x="120" y="0" width="434" height="20" isRemoveLineWhenBlank="true" uuid="38f9a1fa-df03-4360-b936-a367350305c3">
@@ -658,7 +658,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Signature}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.signature}+":"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="0" y="32" width="120" height="20" uuid="f6b837e5-6256-4558-95c7-8362ced89653"/>
@@ -666,7 +666,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Signature level}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.signature.level}+":"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="0" y="52" width="120" height="20" uuid="b7c5e59a-9e28-4fe9-9e48-961d8a4ff6c3"/>
@@ -674,7 +674,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Indication}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.indication}+":"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="192" width="120" height="20" uuid="dbbac912-910c-4b5b-8eed-ad4a2dc10ef3"/>
@@ -682,7 +682,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{On claimed time}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.on.claimed.time}+":"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="212" width="120" height="20" uuid="4917f42f-0986-4814-9521-b4b90c83bb16"/>
@@ -690,7 +690,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Signature position}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.signature.position}+":"]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="232" width="120" height="20" uuid="2ff654d8-ba97-49c8-96b1-ce3dfdbfc671"/>
@@ -698,7 +698,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Signature scope}+":"]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.signature.scope}+":"]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
@@ -717,7 +717,7 @@
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$R{Page}+" "+$V{PAGE_NUMBER}+" "+$R{of}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$R{text.page}+" "+$V{PAGE_NUMBER}+" "+$R{text.of}]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
 				<reportElement x="520" y="15" width="32" height="16" uuid="21cb6777-4c5d-46c3-896a-09a3e7588887"/>
@@ -734,7 +734,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
 					<font fontName="DejaVu Sans"/>
 				</textElement>
-				<textFieldExpression><![CDATA["<a href='https://github.com/esig/dss'>"+$R{Signed Document Validation Report}+"</a>"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["<a href='https://github.com/esig/dss'>"+$R{text.signed.document.validation.report}+"</a>"]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageFooter>
