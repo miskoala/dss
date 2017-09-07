@@ -204,7 +204,9 @@ public class CustomProcessExecutorTest {
 		assertEquals(Indication.TOTAL_PASSED, simpleReport.getIndication(simpleReport.getFirstSignatureId()));
 
 		List<String> warnings = simpleReport.getWarnings(simpleReport.getFirstSignatureId());
-		assertFalse(warnings.contains(MessageTag.TSV_ASTPTCT_ANS.getMessage()));
+		
+		assertFalse(warnings.contains(DSSLocale.getDefaultDSSLocale().getLocalizedMessage("TSV_ASTPTCT_ANS")));
+		//assertFalse(warnings.contains(MessageTag.TSV_ASTPTCT_ANS.getMessage()));
 
 		DetailedReport detailedReport = reports.getDetailedReport();
 		assertEquals(Indication.INDETERMINATE, detailedReport.getBasicValidationIndication(simpleReport.getFirstSignatureId()));
@@ -239,7 +241,9 @@ public class CustomProcessExecutorTest {
 		assertEquals(Indication.TOTAL_PASSED, simpleReport.getIndication(simpleReport.getFirstSignatureId()));
 
 		List<String> warnings = simpleReport.getWarnings(simpleReport.getFirstSignatureId());
-		assertTrue(warnings.contains(MessageTag.TSV_ASTPTCT_ANS.getMessage()));
+		
+		assertTrue(warnings.contains(DSSLocale.getDefaultDSSLocale().getLocalizedMessage("TSV_ASTPTCT_ANS")));
+		//assertTrue(warnings.contains(MessageTag.TSV_ASTPTCT_ANS.getMessage()));
 
 		DetailedReport detailedReport = reports.getDetailedReport();
 		assertEquals(Indication.INDETERMINATE, detailedReport.getBasicValidationIndication(simpleReport.getFirstSignatureId()));
