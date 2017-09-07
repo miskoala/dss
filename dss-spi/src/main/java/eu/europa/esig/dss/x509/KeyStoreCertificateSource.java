@@ -44,7 +44,9 @@ import eu.europa.esig.dss.DSSUtils;
 import eu.europa.esig.dss.utils.Utils;
 
 /**
- * Implements a CertificateSource using a KeyStore.
+ * Implements a CertificateSource using a KeyStore (PKCS12, JKS,...).
+ * 
+ * Note: PKCS12 + JDK7 don't allow trust store
  *
  */
 public class KeyStoreCertificateSource extends CommonCertificateSource {
@@ -206,11 +208,12 @@ public class KeyStoreCertificateSource extends CommonCertificateSource {
 	 */
 	public CertificateToken getCertificate(String alias) {
 		try {
-			if (keyStore.containsAlias(alias)) {
-				Certificate certificate = keyStore.getCertificate(alias);
+			String aliasToSearch = getKey(alias);
+			if (keyStore.containsAlias(aliasToSearch)) {
+				Certificate certificate = keyStore.getCertificate(aliasToSearch);
 				return DSSUtils.loadCertificate(certificate.getEncoded());
 			} else {
-				LOG.warn("Certificate '" + alias + "' not found in the keystore");
+				LOG.warn("Certificate '" + aliasToSearch + "' not found in the keystore");
 				return null;
 			}
 		} catch (GeneralSecurityException e) {
@@ -272,6 +275,7 @@ public class KeyStoreCertificateSource extends CommonCertificateSource {
 			}
 			//koniec zmian
 			
+			//keyStore.setCertificateEntry(getKey(certificateToken.getDSSIdAsString()), certificateToken.getCertificate());
 		} catch (GeneralSecurityException e) {
 			throw new DSSException("Unable to add certificate to the keystore", e);
 		}
@@ -323,6 +327,14 @@ public class KeyStoreCertificateSource extends CommonCertificateSource {
 		} catch (GeneralSecurityException | IOException e) {
 			throw new DSSException("Unable to store the keystore", e);
 		}
+	}
+
+	private String getKey(String inputKey) {
+		if ("PKCS12".equals(keyStore.getType())) {
+			// workaround for https://bugs.openjdk.java.net/browse/JDK-8079616:
+			return inputKey.toLowerCase(Locale.ROOT);
+		}
+		return inputKey;
 	}
 
 }
