@@ -95,7 +95,8 @@ public class XAdESSignatureScopeFinder implements SignatureScopeFinder<XAdESSign
 				// self contained document
 				XmlRootSignatureScope xmlRootSignatureScope = new XmlRootSignatureScope(transformations);
 				xmlRootSignatureScope.setDssLocale(xadesSignature.getDssLocale());
-				result.add(new XmlRootSignatureScope(transformations));
+				//result.add(new XmlRootSignatureScope(transformations));
+				result.add(xmlRootSignatureScope);
 			} else if (uri.startsWith("#")) {
 				// internal reference
 				final boolean xPointerQuery = XPointerResourceResolver.isXPointerQuery(uri, true);
